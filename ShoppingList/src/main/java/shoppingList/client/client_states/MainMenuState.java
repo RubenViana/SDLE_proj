@@ -1,6 +1,7 @@
 package shoppingList.client.client_states;
 
-import shoppingList.helper.Utils;
+import shoppingList.client.helper.Connections;
+import shoppingList.client.helper.Utils;
 import java.util.Scanner;
 
 public class MainMenuState implements ClientState {

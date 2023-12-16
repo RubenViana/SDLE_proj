@@ -13,7 +13,7 @@ public class Client {
             System.out.println("Usage: java Client <userID>");
             exit(1);
         }
-        System.out.println("Client Started");
+        System.out.println("Client '" + args[0] + "' Started");
         ClientState state = new InitState(args[0]);
 
         while (state != null) {

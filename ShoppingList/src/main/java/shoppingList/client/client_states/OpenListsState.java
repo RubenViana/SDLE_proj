@@ -1,9 +1,8 @@
 package shoppingList.client.client_states;
 
-import shoppingList.helper.Connections;
-import shoppingList.helper.Utils;
+import shoppingList.client.helper.Connections;
+import shoppingList.client.helper.Utils;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class OpenListsState implements ClientState {
@@ -20,12 +19,16 @@ public class OpenListsState implements ClientState {
     @Override
     public ClientState run() {
 
+        if (!Connections.pullListFromServer(this.databaseURL, this.listID)) {
+            System.out.println("Error pulling list from server");
+        }
+
         if (!Connections.doesListExistDB(this.databaseURL, this.listID)) {
-            System.out.println("List does not exist");
+            System.out.println("List does not exist locally");
             return new MainMenuState(this.databaseURL);
         }
 
-        //TODO: save items as the hasmap
+        //TODO: save items as the hashmap
         this.items = Connections.getItemsDB(this.databaseURL, this.listID);
 
         while (true) {
@@ -39,7 +42,7 @@ public class OpenListsState implements ClientState {
                 case "2":
                     return new RemoveItemState(this.databaseURL, this.listID);
                 case "3":
-                    //TODO: return new RemoveListState(this.databaseURL, this.listID);
+                    return new UpdateItemState(this.databaseURL, this.listID);
                 case "0":
                     return new MainMenuState(this.databaseURL);
                 default:
@@ -56,7 +59,7 @@ public class OpenListsState implements ClientState {
         printItems();
         System.out.println("[1] Add Item");
         System.out.println("[2] Remove Item");
-        System.out.println("[3] Remove List");
+        System.out.println("[3] Update Item");
         System.out.println("[0] Back");
         System.out.println();
         System.out.print("> ");

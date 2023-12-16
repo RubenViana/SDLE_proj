@@ -1,7 +1,7 @@
 package shoppingList.client.client_states;
 
-import shoppingList.helper.Connections;
-import shoppingList.helper.Utils;
+import shoppingList.client.helper.Connections;
+import shoppingList.client.helper.Utils;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -26,7 +26,7 @@ public class ListListsState implements ClientState {
             String option = scanner.nextLine();
             String listID = null;
             String[] opts = option.split("\\s+");
-            if (opts.length == 2 && opts[0].equals("1")) {
+            if (opts.length == 2 && (opts[0].equals("1") || opts[0].equals("2"))) {
                 listID = opts[1];
             }
             if (listID == null && opts.length == 2) {
@@ -37,6 +37,8 @@ public class ListListsState implements ClientState {
             switch (opts[0]) {
                 case "1":
                     return new OpenListsState(this.databaseURL, listID);
+                case "2":
+                    return new RemoveListState(this.databaseURL, listID);
                 case "0":
                     return new MainMenuState(this.databaseURL);
                 default:
@@ -53,6 +55,7 @@ public class ListListsState implements ClientState {
         System.out.println();
         printLists();
         System.out.println("[1] Open List <listID>");
+        System.out.println("[2] Remove List <listID>");
         System.out.println("[0] Back");
         System.out.println();
         System.out.print("> ");

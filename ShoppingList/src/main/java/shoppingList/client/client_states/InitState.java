@@ -22,8 +22,9 @@ public class InitState implements ClientState {
             System.out.println("Connected to database");
             return new MainMenuState(this.databaseURL);
         }
-
-        System.out.println("Failed to connect to database");
+        else {
+            System.out.println("Failed to connect to database");
+        }
 
         return null;
     }

@@ -1,6 +1,4 @@
-package shoppingList.helper;
-
-import java.util.Scanner;
+package shoppingList.client.helper;
 
 public class Utils {
     public static void clearTerminal() {

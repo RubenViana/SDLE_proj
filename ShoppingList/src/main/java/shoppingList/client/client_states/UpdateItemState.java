@@ -5,19 +5,18 @@ import shoppingList.client.helper.Utils;
 
 import java.util.Scanner;
 
-public class AddItemState implements ClientState {
-    private final String databaseURL;
+public class UpdateItemState implements ClientState {
     private final String listID;
+    private final String databaseURL;
     private final Scanner scanner = new Scanner(System.in);
 
-    public AddItemState(String databaseURL, String listID) {
+    public UpdateItemState(String databaseURL, String listID) {
         this.databaseURL = databaseURL;
         this.listID = listID;
     }
 
     @Override
     public ClientState run() {
-
         System.out.print("Item Name: ");
         String itemName = scanner.nextLine();
         System.out.print("Item Quantity: ");
@@ -25,22 +24,22 @@ public class AddItemState implements ClientState {
 
         //TODO: add itemQuantity to addItemDB and check if quantity is valid
 
-        if (Connections.doesItemExistDB(this.databaseURL, this.listID, itemName)) {
-            System.out.println("Item already exists");
+        if (!Connections.doesItemExistDB(this.databaseURL, this.listID, itemName)) {
+            System.out.println("Item doesnt exists");
             return new OpenListsState(this.databaseURL, this.listID);
         }
 
-        if (!Connections.addItemDB(this.databaseURL, this.listID, itemName)) { //missing itemQuantity
-            System.out.println("Failed to add item");
+        if (!Connections.updateItemDB(this.databaseURL, this.listID, itemName)) { //missing itemQuantity
+            System.out.println("Failed to update item");
         }
 
         return new OpenListsState(this.databaseURL, this.listID);
     }
 
-    private void printAddItemMenu() {
+    private void printUpdateItemMenu() {
         Utils.clearTerminal();
         System.out.println("========");
-        System.out.println("Add Item");
+        System.out.println("Update Item");
         System.out.println("========");
         System.out.println();
     }
