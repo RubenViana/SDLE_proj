@@ -53,12 +53,11 @@ public class OpenListsState implements ClientState {
         System.out.println("=========================================");
         System.out.println("List " + this.listID);
         System.out.println("=========================================");
-        System.out.println();
         printItems();
-        System.out.println("[1] - Add Item");
-        System.out.println("[2] - Remove Item");
-        System.out.println("[3] - Remove List");
-        System.out.println("[0] - Back");
+        System.out.println("[1] Add Item");
+        System.out.println("[2] Remove Item");
+        System.out.println("[3] Remove List");
+        System.out.println("[0] Back");
         System.out.println();
         System.out.print("> ");
     }

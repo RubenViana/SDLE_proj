@@ -52,8 +52,8 @@ public class ListListsState implements ClientState {
         System.out.println("===========");
         System.out.println();
         printLists();
-        System.out.println("[1] - Open List <listID>");
-        System.out.println("[0] - Back");
+        System.out.println("[1] Open List <listID>");
+        System.out.println("[0] Back");
         System.out.println();
         System.out.print("> ");
     }

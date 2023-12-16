@@ -47,10 +47,10 @@ public class MainMenuState implements ClientState {
         System.out.println("Main Menu");
         System.out.println("=========");
         System.out.println();
-        System.out.println("[1] - Create List");
-        System.out.println("[2] - Open List <listID>");
-        System.out.println("[3] - List Lists");
-        System.out.println("[0] - Exit");
+        System.out.println("[1] Create List");
+        System.out.println("[2] Open List <listID>");
+        System.out.println("[3] List Lists");
+        System.out.println("[0] Exit");
         System.out.println();
         System.out.print("> ");
     }
