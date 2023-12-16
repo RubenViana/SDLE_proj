@@ -27,6 +27,7 @@ public class Router {
             ZMQ.Socket backend = context.createSocket(SocketType.ROUTER);
             frontend.bind("tcp://*:" + port);
             backend.bind("tcp://*:" + (port + 1000));
+            Connections.logEvent( "Router Online", "{Frontend: " + port + " | Backend: " + (port + 1000) + "}");
 
 
             for (int workerNbr = 0; workerNbr < NBR_WORKERS; workerNbr++)
@@ -45,7 +46,7 @@ public class Router {
                 items.register(frontend, ZMQ.Poller.POLLIN);
 
                 if (items.poll() < 0) {
-                    System.out.println("Router interrupted");
+                    Connections.logEvent( "Router Interrupted", "{}");
                     break;  //  Interrupted
                 }
 
@@ -60,25 +61,23 @@ public class Router {
                     assert (empty.isEmpty());
                     Frame request = new Gson().fromJson(backend.recvStr(), Frame.class);
 
-                    System.out.println(clientAddr + " - " + request.toString());
-
                     switch (request.getAction()) {
                         case SERVER_STATUS:
-                            System.out.println("SERVER_STATUS");
                             // add server to the list of available servers
                             if (request.getStatus() == Frame.FrameStatus.SERVER_OK)
                                 workerQueue.add(serverAddr);
                             //TODO send the future hash ring here to the server
+                            Connections.logEvent(serverAddr + " Online", request.toString());
                             break;
                         case PULL_LIST:
-                            System.out.println("PULL_LIST");
                             //JUST FOR TESTING
                             Connections.sendFrameFrontend(frontend, clientAddr, new Frame(request.getStatus(), Frame.FrameAction.PULL_LIST, ""));
+                            Connections.logEvent( "Response from " + serverAddr + " to " + clientAddr, request.toString());
                             break;
                         case PUSH_LIST:
-                            System.out.println("PUSH_LIST");
                             //JUST FOR TESTING
                             Connections.sendFrameFrontend(frontend, clientAddr, new Frame(request.getStatus(), Frame.FrameAction.PUSH_LIST, ""));
+                            Connections.logEvent( "Response from " + serverAddr + " to " + clientAddr, request.toString());
                             break;
                         default:
                             System.out.println("Invalid action");
@@ -92,24 +91,22 @@ public class Router {
                     assert (empty.isEmpty());
                     Frame request = new Gson().fromJson(frontend.recvStr(), Frame.class);
 
-                    System.out.println(clientAddr + " - " + request.toString());
-
                     String serverAddr;
 
                     switch (request.getAction()) {
                         case ROUTER_STATUS:
                             Connections.sendFrameFrontend(frontend, clientAddr, new Frame(Frame.FrameStatus.ROUTER_OK, Frame.FrameAction.ROUTER_STATUS, ""));
+                            Connections.logEvent( "Reply to " + clientAddr, request.toString());
                             break;
                         case PULL_LIST:
-                            System.out.println("PULL_LIST");
                             serverAddr = workerQueue.poll();//TODO get the correct server address based on the listID
-                            System.out.println("serverAddr: " + serverAddr);
                             Connections.sendFrameBackend(backend, serverAddr, clientAddr, new Frame(request.getStatus(), Frame.FrameAction.PULL_LIST, ""));
+                            Connections.logEvent( "Request from " + clientAddr + " to " + serverAddr, request.toString());
                             break;
                         case PUSH_LIST:
-                            System.out.println("PUSH_LIST");
                             serverAddr = workerQueue.poll();//TODO get the correct server address based on the listID
                             Connections.sendFrameBackend(backend, serverAddr, clientAddr, new Frame(request.getStatus(), Frame.FrameAction.PUSH_LIST, ""));
+                            Connections.logEvent( "Request from " + clientAddr + " to " + serverAddr, request.toString());
                             break;
                         default:
                             System.out.println("Invalid action");
@@ -167,7 +164,6 @@ public class Router {
             System.exit(1);
         }
 
-        System.out.println("Router '" + args[0] + "' Started");
         Router router = new Router(Integer.parseInt(args[0]));
 
         router.init();

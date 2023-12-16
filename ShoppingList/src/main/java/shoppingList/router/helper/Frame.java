@@ -1,21 +1,14 @@
 package shoppingList.router.helper;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.time.Instant;
-
-public class Frame implements java.io.Serializable {
+public class Frame {
     private final FrameStatus status;
     private final FrameAction action;
     private final String data;
-    private final String timestamp;
 
     public Frame (FrameStatus status, FrameAction action, String data) {
         this.status = status;
         this.action = action;
         this.data = data;
-        this.timestamp = Instant.now().toString();
     }
 
     public FrameStatus getStatus() {
@@ -30,13 +23,9 @@ public class Frame implements java.io.Serializable {
         return data;
     }
 
-    public String getTimestamp() {
-        return timestamp;
-    }
-
     @Override
     public String toString() {
-        return String.format("%s %s %s %s", status, action, data, timestamp);
+        return String.format("{%s?%s?%s}", status, action, data);
     }
 
 
