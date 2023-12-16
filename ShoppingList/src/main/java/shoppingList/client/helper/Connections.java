@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 import com.google.gson.Gson;
 import org.zeromq.SocketType;
@@ -164,7 +165,7 @@ public class Connections {
 
             ZMQ.Socket socket = context.createSocket(SocketType.REQ);
             socket.connect("tcp://localhost:" + port);
-            String clientID = "client_" + System.currentTimeMillis();
+            String clientID = "C_" + UUID.randomUUID().toString().substring(0, 8);
             socket.setIdentity(clientID.getBytes());
 
             //send status frame
