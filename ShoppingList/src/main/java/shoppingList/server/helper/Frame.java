@@ -1,23 +1,23 @@
-package shoppingList.client.helper;
+package shoppingList.server.helper;
 
 public class Frame {
-    private final FrameStatus status;
-    private final FrameAction action;
+    private final Frame.FrameStatus status;
+    private final Frame.FrameAction action;
     private final String listID;
     private final String listItem;
 
-    public Frame (FrameStatus status, FrameAction action, String listID, String listItem) {
+    public Frame (Frame.FrameStatus status, Frame.FrameAction action, String listID, String listItem) {
         this.status = status;
         this.action = action;
         this.listID = listID;
         this.listItem = listItem;
     }
 
-    public FrameStatus getStatus() {
+    public Frame.FrameStatus getStatus() {
         return status;
     }
 
-    public FrameAction getAction() {
+    public Frame.FrameAction getAction() {
         return action;
     }
 
@@ -52,4 +52,5 @@ public class Frame {
         PUSH_LIST,
     }
 }
+
 

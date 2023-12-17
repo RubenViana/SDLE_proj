@@ -7,6 +7,7 @@ import org.zeromq.ZContext;
 import shoppingList.router.helper.Connections;
 import shoppingList.router.helper.Frame;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -30,12 +31,8 @@ public class Router {
             Connections.logEvent( "Router Online", "{Frontend: " + port + " | Backend: " + (port + 1000) + "}");
 
 
-            for (int workerNbr = 0; workerNbr < NBR_WORKERS; workerNbr++)
-                new WorkerTask().start();
-
-
             //  Queue of available workers
-            Queue<String> workerQueue = new LinkedList<String>();
+            ArrayList<String> servers = new ArrayList<>();
 
             while (!Thread.currentThread().isInterrupted()) {
                 //  Initialize poll set
@@ -65,18 +62,18 @@ public class Router {
                         case SERVER_STATUS:
                             // add server to the list of available servers
                             if (request.getStatus() == Frame.FrameStatus.SERVER_OK)
-                                workerQueue.add(serverAddr);
+                                servers.add(serverAddr);
                             //TODO send the future hash ring here to the server
                             Connections.logEvent(serverAddr + " Online", request.toString());
                             break;
                         case PULL_LIST:
                             //JUST FOR TESTING
-                            Connections.sendFrameFrontend(frontend, clientAddr, new Frame(request.getStatus(), Frame.FrameAction.PULL_LIST, ""));
+                            Connections.sendFrameFrontend(frontend, clientAddr, request);
                             Connections.logEvent( "Response from " + serverAddr + " to " + clientAddr, request.toString());
                             break;
                         case PUSH_LIST:
                             //JUST FOR TESTING
-                            Connections.sendFrameFrontend(frontend, clientAddr, new Frame(request.getStatus(), Frame.FrameAction.PUSH_LIST, ""));
+                            Connections.sendFrameFrontend(frontend, clientAddr, request);
                             Connections.logEvent( "Response from " + serverAddr + " to " + clientAddr, request.toString());
                             break;
                         default:
@@ -95,17 +92,17 @@ public class Router {
 
                     switch (request.getAction()) {
                         case ROUTER_STATUS:
-                            Connections.sendFrameFrontend(frontend, clientAddr, new Frame(Frame.FrameStatus.ROUTER_OK, Frame.FrameAction.ROUTER_STATUS, ""));
+                            Connections.sendFrameFrontend(frontend, clientAddr, new Frame(Frame.FrameStatus.ROUTER_OK, Frame.FrameAction.ROUTER_STATUS, "", ""));
                             Connections.logEvent( "Reply to " + clientAddr, request.toString());
                             break;
                         case PULL_LIST:
-                            serverAddr = workerQueue.poll();//TODO get the correct server address based on the listID
-                            Connections.sendFrameBackend(backend, serverAddr, clientAddr, new Frame(request.getStatus(), Frame.FrameAction.PULL_LIST, ""));
+                            serverAddr = servers.get(0);//TODO get the correct server address based on the listID
+                            Connections.sendFrameBackend(backend, serverAddr, clientAddr, request);
                             Connections.logEvent( "Request from " + clientAddr + " to " + serverAddr, request.toString());
                             break;
                         case PUSH_LIST:
-                            serverAddr = workerQueue.poll();//TODO get the correct server address based on the listID
-                            Connections.sendFrameBackend(backend, serverAddr, clientAddr, new Frame(request.getStatus(), Frame.FrameAction.PUSH_LIST, ""));
+                            serverAddr = servers.get(0);//TODO get the correct server address based on the listID
+                            Connections.sendFrameBackend(backend, serverAddr, clientAddr, request);
                             Connections.logEvent( "Request from " + clientAddr + " to " + serverAddr, request.toString());
                             break;
                         default:
@@ -117,44 +114,6 @@ public class Router {
             }
         }
     }
-
-
-
-    private static class WorkerTask extends Thread
-    {
-        @Override
-        public void run()
-        {
-            //  Prepare our context and sockets
-            try (ZContext context = new ZContext()) {
-                ZMQ.Socket worker = context.createSocket(SocketType.REQ);
-                String workerId = Thread.currentThread().getName();
-                worker.setIdentity(workerId.getBytes());
-
-                worker.connect("tcp://localhost:" + (5000 + 1000));
-
-                //  Tell backend we're ready for work
-                worker.sendMore("SERVER");
-                worker.sendMore("");
-                worker.send(new Gson().toJson(new Frame(Frame.FrameStatus.SERVER_OK, Frame.FrameAction.SERVER_STATUS, "")));
-
-
-                while (!Thread.currentThread().isInterrupted()) {
-                    String address = worker.recvStr();
-                    String empty = worker.recvStr();
-                    assert (empty.isEmpty());
-                    //  Get request, send reply
-                    Frame request = new Gson().fromJson(worker.recvStr(), Frame.class);
-
-                    worker.sendMore(address);
-                    worker.sendMore("");
-                    worker.send(new Gson().toJson(new Frame(Frame.FrameStatus.SERVER_OK, request.getAction(), "")));
-                }
-            }
-        }
-    }
-
-
 
 
     public static void main(String[] args) {

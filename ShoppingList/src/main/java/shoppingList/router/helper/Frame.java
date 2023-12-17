@@ -1,31 +1,37 @@
 package shoppingList.router.helper;
 
 public class Frame {
-    private final FrameStatus status;
-    private final FrameAction action;
-    private final String data;
+    private final Frame.FrameStatus status;
+    private final Frame.FrameAction action;
+    private final String listID;
+    private final String listItem;
 
-    public Frame (FrameStatus status, FrameAction action, String data) {
+    public Frame (Frame.FrameStatus status, Frame.FrameAction action, String listID, String listItem) {
         this.status = status;
         this.action = action;
-        this.data = data;
+        this.listID = listID;
+        this.listItem = listItem;
     }
 
-    public FrameStatus getStatus() {
+    public Frame.FrameStatus getStatus() {
         return status;
     }
 
-    public FrameAction getAction() {
+    public Frame.FrameAction getAction() {
         return action;
     }
 
-    public String getData() {
-        return data;
+    public String getListID() {
+        return listID;
+    }
+
+    public String getListItem() {
+        return listItem;
     }
 
     @Override
     public String toString() {
-        return String.format("{%s?%s?%s}", status, action, data);
+        return String.format("{%s?%s?%s?%s}", status, action, listID, listItem);
     }
 
 

@@ -70,6 +70,10 @@ public class Connections {
                 stmt.setString(2, listID);
                 stmt.executeUpdate();
             }
+
+            //TESTING ONLY
+            pushListToServer(databaseURL, listID, item);
+
             return true;
         } catch (SQLException e) {
             System.err.println("Error connecting to the database: " + e.getMessage());
@@ -169,7 +173,7 @@ public class Connections {
             socket.setIdentity(clientID.getBytes());
 
             //send status frame
-            socket.send(new Gson().toJson(new Frame(Frame.FrameStatus.CLIENT_OK, Frame.FrameAction.ROUTER_STATUS, "")));
+            socket.send(new Gson().toJson(new Frame(Frame.FrameStatus.CLIENT_OK, Frame.FrameAction.ROUTER_STATUS, "", "")));
 
             //receive status frame
             Frame response = new Gson().fromJson(socket.recvStr(), Frame.class);
@@ -198,7 +202,7 @@ public class Connections {
         }
 
         //send pull list frame
-        socket.send(new Gson().toJson(new Frame(Frame.FrameStatus.CLIENT_OK, Frame.FrameAction.PULL_LIST, listID)));
+        socket.send(new Gson().toJson(new Frame(Frame.FrameStatus.CLIENT_OK, Frame.FrameAction.PULL_LIST, listID, "")));
 
         //receive pull list frame
         Frame response = new Gson().fromJson(socket.recvStr(), Frame.class);
@@ -206,10 +210,39 @@ public class Connections {
         switch (response.getStatus()) {
             case SERVER_OK:
                 System.out.println("List pulled from server");
-                //TODO update list in database
+                //TESTING PURPOSES ONLY
+                updateListDB(databaseURL, listID, response.getListItem());
                 return true;
             case SERVER_ERROR:
                 System.out.println("Error pulling list from server");
+                break;
+            default:
+                break;
+        }
+
+        return false;
+    }
+
+    public static boolean pushListToServer(String databaseURL, String listID, String item) {
+
+        ZMQ.Socket socket = establishConnectionToRouter();
+
+        if (socket == null) {
+            return false;
+        }
+
+        //send push list frame
+        socket.send(new Gson().toJson(new Frame(Frame.FrameStatus.CLIENT_OK, Frame.FrameAction.PUSH_LIST, listID, item)));
+
+        //receive push list frame
+        Frame response = new Gson().fromJson(socket.recvStr(), Frame.class);
+
+        switch (response.getStatus()) {
+            case SERVER_OK:
+                System.out.println("List pushed to server");
+                return true;
+            case SERVER_ERROR:
+                System.out.println("Error pushing list to server");
                 break;
             default:
                 break;
