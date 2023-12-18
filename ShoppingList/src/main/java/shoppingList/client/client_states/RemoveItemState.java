@@ -7,12 +7,14 @@ import java.util.Scanner;
 
 public class RemoveItemState implements ClientState {
     private final String databaseURL;
+    private final String userID;
     private final String listID;
     private final Scanner scanner = new Scanner(System.in);
 
-    public RemoveItemState(String databaseURL, String listID) {
+    public RemoveItemState(String databaseURL, String userID, String listID) {
         this.databaseURL = databaseURL;
         this.listID = listID;
+        this.userID = userID;
     }
 
     @Override
@@ -23,14 +25,14 @@ public class RemoveItemState implements ClientState {
 
         if (!Connections.doesItemExistDB(this.databaseURL, this.listID, itemName)) {
             System.out.println("Item does not exist");
-            return new OpenListsState(this.databaseURL, this.listID);
+            return new OpenListsState(this.databaseURL, this.userID, this.listID);
         }
 
-        if (!Connections.removeItemDB(this.databaseURL, this.listID, itemName)) {
+        if (!Connections.removeItemDB(this.databaseURL, this.userID, this.listID, itemName)) {
             System.out.println("Failed to remove item");
         }
 
-        return new OpenListsState(this.databaseURL, this.listID);
+        return new OpenListsState(this.databaseURL, this.userID, this.listID);
     }
 
     private void printRemoveItemMenu() {

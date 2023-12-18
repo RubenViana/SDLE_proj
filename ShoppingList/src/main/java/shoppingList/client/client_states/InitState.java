@@ -5,11 +5,15 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 import java.sql.SQLException;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+import shoppingList.client.helper.Connections;
 
 import static java.lang.System.exit;
 
 public class InitState implements ClientState {
-    private String userID;
+    private final String userID;
     private String databaseURL;
 
     public InitState(String userID) {
@@ -18,9 +22,17 @@ public class InitState implements ClientState {
     @Override
     public ClientState run() {
 
+
         if (connectOrCreateDatabase()) {
             System.out.println("Connected to database");
-            return new MainMenuState(this.databaseURL);
+
+            // Create a ScheduledExecutorService with a single thread
+            ScheduledExecutorService scheduler = Executors.newSingleThreadScheduledExecutor();
+
+            // Pull local lists from the server every 10 seconds
+            scheduler.scheduleAtFixedRate(() -> Connections.updateLocalListsFromServer(this.databaseURL, this.userID), 0, Connections.PULLING_RATE, TimeUnit.SECONDS);
+
+            return new MainMenuState(this.databaseURL, this.userID);
         }
         else {
             System.out.println("Failed to connect to database");
@@ -30,14 +42,14 @@ public class InitState implements ClientState {
     }
 
     private boolean connectOrCreateDatabase() {
-        Connection connection;
-        this.databaseURL = "jdbc:sqlite:./src/main/java/shoppingList/client/" + this.userID + ".db";
-
         try {
+            File file = new File("./src/users/" + this.userID + "_database.db");
+
+            Connection connection;
+            this.databaseURL = "jdbc:sqlite:./src/users/" + this.userID + "_database.db";
             // Attempt to connect to the database
             connection = DriverManager.getConnection(this.databaseURL);
 
-            File file = new File("client/" + this.userID + ".db");
             if (!file.exists()) {
                 // Create a table (if it doesn't exist)
                 createTable(connection);

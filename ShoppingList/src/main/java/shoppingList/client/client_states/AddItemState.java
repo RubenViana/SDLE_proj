@@ -7,12 +7,14 @@ import java.util.Scanner;
 
 public class AddItemState implements ClientState {
     private final String databaseURL;
+    private final String userID;
     private final String listID;
     private final Scanner scanner = new Scanner(System.in);
 
-    public AddItemState(String databaseURL, String listID) {
+    public AddItemState(String databaseURL, String userID, String listID) {
         this.databaseURL = databaseURL;
         this.listID = listID;
+        this.userID = userID;
     }
 
     @Override
@@ -27,17 +29,19 @@ public class AddItemState implements ClientState {
 
         if (Connections.doesItemExistDB(this.databaseURL, this.listID, itemName)) {
             System.out.println("Item already exists");
-            return new OpenListsState(this.databaseURL, this.listID);
+            return new OpenListsState(this.databaseURL, this.userID, this.listID);
         }
 
-        if (!Connections.addItemDB(this.databaseURL, this.listID, itemName)) { //missing itemQuantity
+        if (!Connections.addItemDB(this.databaseURL, this.userID, this.listID, itemName)) { //missing itemQuantity
             System.out.println("Failed to add item");
         }
+        //TESTING PURPOSES ONLY, NOT FINAL IMPLEMENTATION
+        Connections.pushListToServer(databaseURL, userID, listID);
 
-        return new OpenListsState(this.databaseURL, this.listID);
+        return new OpenListsState(this.databaseURL, this.userID, this.listID);
     }
 
-    private void printAddItemMenu() {
+    private void display() {
         Utils.clearTerminal();
         System.out.println("========");
         System.out.println("Add Item");

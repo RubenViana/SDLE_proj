@@ -20,4 +20,5 @@ public class Connections {
         String timestamp = TIMESTAMP_FORMAT.format(new Date());
         System.out.printf("[%-8s]   %-37s %s%n", timestamp, event, details);
     }
+
 }

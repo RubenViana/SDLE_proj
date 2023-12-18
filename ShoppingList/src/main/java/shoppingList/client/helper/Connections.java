@@ -1,8 +1,12 @@
 package shoppingList.client.helper;
 
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.*;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
@@ -12,8 +16,11 @@ import org.zeromq.ZMQ;
 import org.zeromq.ZContext;
 
 public class Connections {
+    public static final Integer PULLING_RATE = 30; //seconds
 
+    private static final int TIMEOUT = 5000; //timeout for receiving a response from the router
     private static final ZContext context = new ZContext();
+    private static final SimpleDateFormat TIMESTAMP_FORMAT = new SimpleDateFormat("dd:MM:yyyy HH:mm:ss");
     private static final List<Integer> routersPorts = List.of(5000); //ONLY ONE ROUTER FOR NOW
     public static boolean doesListExistDB(String databaseURL, String listID) {
         try {
@@ -61,7 +68,7 @@ public class Connections {
         return false;
     }
 
-    public static boolean updateListDB(String databaseURL, String listID, String item) {
+    public static boolean updateListDB(String databaseURL, String userID, String listID, String item) {
         try {
             Connection connection = DriverManager.getConnection(databaseURL);
             String query = "UPDATE lists SET item = ? WHERE list_id = ?";
@@ -70,9 +77,6 @@ public class Connections {
                 stmt.setString(2, listID);
                 stmt.executeUpdate();
             }
-
-            //TESTING ONLY
-            pushListToServer(databaseURL, listID, item);
 
             return true;
         } catch (SQLException e) {
@@ -98,25 +102,25 @@ public class Connections {
         return false;
     }
 
-    public static boolean addItemDB(String databaseURL, String listID, String item) {
+    public static boolean addItemDB(String databaseURL, String userID, String listID, String item) {
         // TODO: add item to the item list and them update the list in the database
 
         //Stub for now
-        return updateListDB(databaseURL, listID, item);
+        return updateListDB(databaseURL, userID, listID, item);
     }
 
-    public static boolean removeItemDB(String databaseURL, String listID, String item) {
+    public static boolean removeItemDB(String databaseURL, String userID, String listID, String item) {
 
         // TODO: remove item from the item list and them update the list in the database
 
         //Stub for now
-        return updateListDB(databaseURL, listID, null);
+        return updateListDB(databaseURL, userID, listID, null);
     }
 
-    public static boolean updateItemDB(String databaseURL, String listID, String item) {
+    public static boolean updateItemDB(String databaseURL, String userID, String listID, String item) {
         // TODO: update item from the item list and them update the list in the database
 
-        return updateListDB(databaseURL, listID, item);
+        return updateListDB(databaseURL, userID, listID, item);
     }
 
     public static String getItemsDB(String databaseURL, String listID) {
@@ -131,7 +135,6 @@ public class Connections {
                     StringBuilder sb = new StringBuilder();
                     while (rs.next()) {
                         sb.append(rs.getString("item"));
-                        sb.append("\n");
                     }
                     return sb.toString();
                 }
@@ -161,41 +164,59 @@ public class Connections {
         return null;
     }
 
-    public static ZMQ.Socket establishConnectionToRouter() {
+    public static ZMQ.Socket establishConnectionToRouter(String userID) {
 
         //loop for all routers address know to the client, connect to the first one that is available
         for (int port : routersPorts) {
-            System.out.println("Connecting to router at port " + port);
+            logEvent(userID, "Connecting to router at port " + port);
 
             ZMQ.Socket socket = context.createSocket(SocketType.REQ);
             socket.connect("tcp://localhost:" + port);
-            String clientID = "C_" + UUID.randomUUID().toString().substring(0, 8);
+            String clientID = userID + "_" + UUID.randomUUID().toString().substring(0, 4);
             socket.setIdentity(clientID.getBytes());
 
             //send status frame
             socket.send(new Gson().toJson(new Frame(Frame.FrameStatus.CLIENT_OK, Frame.FrameAction.ROUTER_STATUS, "", "")));
 
-            //receive status frame
-            Frame response = new Gson().fromJson(socket.recvStr(), Frame.class);
+            // Use ZMQ.Poller to wait for events on the socket with a timeout
+            ZMQ.Poller poller = context.createPoller(1);
+            poller.register(socket, ZMQ.Poller.POLLIN);
 
-            switch (response.getStatus()) {
-                case ROUTER_OK:
-                    System.out.println("Connected to router at port " + port);
-                    return socket;
-                case ROUTER_ERROR:
-                    System.out.println("Error connecting to router at port " + port);
+            long startTime = System.currentTimeMillis();
+
+            while (poller.poll(TIMEOUT) != -1) {
+                if (System.currentTimeMillis() - startTime > TIMEOUT) {
+                    logEvent(userID, "Timeout connecting to router at port " + port);
                     break;
-                default:
-                    break;
+                }
+
+                // Check if the socket has an event
+                if (poller.pollin(0)) {
+                    // Receive the response
+                    Frame response = new Gson().fromJson(socket.recvStr(), Frame.class);
+                    switch (response.getStatus()) {
+                        case ROUTER_OK:
+                            logEvent(userID, "Connected to router at port " + port);
+                            poller.close();
+                            return socket;
+                        case ROUTER_ERROR:
+                            logEvent(userID, "Error connecting to router at port " + port);
+                            break;
+                        default:
+                            break;
+                    }
+                }
             }
+            socket.close();
+            poller.close();
         }
-        System.out.println("No router available");
+        logEvent(userID, "No router available");
         return null;
     }
 
-    public static boolean pullListFromServer(String databaseURL, String listID) {
+    public static boolean pullListFromServer(String databaseURL, String userID, String listID) {
 
-        ZMQ.Socket socket = establishConnectionToRouter();
+        ZMQ.Socket socket = establishConnectionToRouter(userID);
 
         if (socket == null) {
             return false;
@@ -204,50 +225,128 @@ public class Connections {
         //send pull list frame
         socket.send(new Gson().toJson(new Frame(Frame.FrameStatus.CLIENT_OK, Frame.FrameAction.PULL_LIST, listID, "")));
 
-        //receive pull list frame
-        Frame response = new Gson().fromJson(socket.recvStr(), Frame.class);
+        // Use ZMQ.Poller to wait for events on the socket with a timeout
+        ZMQ.Poller poller = context.createPoller(1);
+        poller.register(socket, ZMQ.Poller.POLLIN);
 
-        switch (response.getStatus()) {
-            case SERVER_OK:
-                System.out.println("List pulled from server");
-                //TESTING PURPOSES ONLY
-                updateListDB(databaseURL, listID, response.getListItem());
-                return true;
-            case SERVER_ERROR:
-                System.out.println("Error pulling list from server");
+        long startTime = System.currentTimeMillis();
+
+        while (poller.poll(TIMEOUT) != -1) {
+            if (System.currentTimeMillis() - startTime > TIMEOUT) {
+                logEvent(userID, "Timeout waiting for router response");
                 break;
-            default:
-                break;
+            }
+
+            if (poller.pollin(0)){
+                //receive pull list frame
+                Frame response = new Gson().fromJson(socket.recvStr(), Frame.class);
+
+                switch (response.getStatus()) {
+                    case SERVER_OK:
+                        logEvent(userID, "List " + listID + " pulled from server");
+
+                        //TESTING PURPOSES ONLY, NOT FINAL IMPLEMENTATION
+                        if (!doesListExistDB(databaseURL, listID))
+                            if (addListDB(databaseURL, listID))
+                                logEvent(userID, "List " + listID + " added to database");
+
+                        if (updateListDB(databaseURL, userID, listID, response.getListItem()))
+                            logEvent(userID, "List " + listID + " updated in database");
+
+                        poller.close();
+                        socket.close();
+                        return true;
+                    case SERVER_ERROR:
+                        logEvent(userID, "Error pulling list " + listID + " from server");
+                        poller.close();
+                        socket.close();
+                        return false;
+                    default:
+                        break;
+                }
+            }
         }
-
+        poller.close();
+        socket.close();
         return false;
     }
 
-    public static boolean pushListToServer(String databaseURL, String listID, String item) {
+    public static boolean pushListToServer(String databaseURL, String userID, String listID) {
 
-        ZMQ.Socket socket = establishConnectionToRouter();
+        ZMQ.Socket socket = establishConnectionToRouter(userID);
 
         if (socket == null) {
             return false;
         }
 
+        String item = getItemsDB(databaseURL, listID);
+
         //send push list frame
         socket.send(new Gson().toJson(new Frame(Frame.FrameStatus.CLIENT_OK, Frame.FrameAction.PUSH_LIST, listID, item)));
 
-        //receive push list frame
-        Frame response = new Gson().fromJson(socket.recvStr(), Frame.class);
+        // Use ZMQ.Poller to wait for events on the socket with a timeout
+        ZMQ.Poller poller = context.createPoller(1);
+        poller.register(socket, ZMQ.Poller.POLLIN);
 
-        switch (response.getStatus()) {
-            case SERVER_OK:
-                System.out.println("List pushed to server");
-                return true;
-            case SERVER_ERROR:
-                System.out.println("Error pushing list to server");
+        long startTime = System.currentTimeMillis();
+
+        while (poller.poll(TIMEOUT) != -1) {
+            if (System.currentTimeMillis() - startTime > TIMEOUT) {
+                logEvent(userID, "Timeout waiting for router response");
                 break;
-            default:
-                break;
+            }
+
+            if (poller.pollin(0)) {
+                //receive push list frame
+                Frame response = new Gson().fromJson(socket.recvStr(), Frame.class);
+
+                switch (response.getStatus()) {
+                    case SERVER_OK:
+                        logEvent(userID, "List " + listID + " pushed to server");
+
+                        poller.close();
+                        socket.close();
+                        return true;
+                    case SERVER_ERROR:
+                        logEvent(userID, "Error pushing list " + listID + " to server");
+
+                        poller.close();
+                        socket.close();
+                        return false;
+                    default:
+                        break;
+                }
+            }
         }
-
+        poller.close();
+        socket.close();
         return false;
     }
+
+    public static void updateLocalListsFromServer(String databaseURL, String userID) {
+        ArrayList<String> lists = getListsDB(databaseURL);
+        if (lists == null) {
+            return;
+        }
+
+        for (String list : lists) {
+            pullListFromServer(databaseURL, userID, list);
+        }
+    }
+
+    private static void logEvent(String userID, String message) {
+        try (PrintWriter writer = new PrintWriter(new FileWriter("./src/users/" + userID + "_logs.txt", true))) {
+            String timestamp = TIMESTAMP_FORMAT.format(new Date());
+            writer.printf("[%s]   %s%n", timestamp, message);
+        } catch (IOException e) {
+            try {
+                PrintWriter writer = new PrintWriter("./src/users/" + userID + "_logs.txt");
+                writer.close();
+            } catch (IOException ex) {
+                System.err.println("Creating Log File " + ex.getMessage());
+                ex.printStackTrace();
+            }
+        }
+    }
+
 }

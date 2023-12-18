@@ -7,25 +7,31 @@ import java.util.Scanner;
 
 public class OpenListsState implements ClientState {
     private final String databaseURL;
+    private final String userID;
     private final String listID;
     private final Scanner scanner = new Scanner(System.in);
     private String items;
 
-    public OpenListsState(String databaseURL, String listID) {
+    public OpenListsState(String databaseURL, String userID, String listID) {
         this.databaseURL = databaseURL;
         this.listID = listID;
+        this.userID = userID;
     }
 
     @Override
     public ClientState run() {
 
-        if (!Connections.pullListFromServer(this.databaseURL, this.listID)) {
+        /*if (!Connections.pullListFromServer(this.databaseURL, this.listID)) {
             System.out.println("Error pulling list from server");
-        }
+        }*/
 
         if (!Connections.doesListExistDB(this.databaseURL, this.listID)) {
             System.out.println("List does not exist locally");
-            return new MainMenuState(this.databaseURL);
+            if (!Connections.pullListFromServer(this.databaseURL, this.userID, this.listID)) {
+                System.out.println("List does not exist in server");
+                return new MainMenuState(this.databaseURL, this.userID);
+            }
+            return new OpenListsState(this.databaseURL, this.userID, this.listID);
         }
 
         //TODO: save items as the hashmap
@@ -38,13 +44,13 @@ public class OpenListsState implements ClientState {
 
             switch (option) {
                 case "1":
-                    return new AddItemState(this.databaseURL, this.listID);
+                    return new AddItemState(this.databaseURL, this.userID, this.listID);
                 case "2":
-                    return new RemoveItemState(this.databaseURL, this.listID);
+                    return new RemoveItemState(this.databaseURL, this.userID, this.listID);
                 case "3":
-                    return new UpdateItemState(this.databaseURL, this.listID);
+                    return new UpdateItemState(this.databaseURL, this.userID, this.listID);
                 case "0":
-                    return new MainMenuState(this.databaseURL);
+                    return new MainMenuState(this.databaseURL, this.userID);
                 default:
                     System.out.println("Invalid option");
             }

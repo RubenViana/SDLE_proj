@@ -6,9 +6,11 @@ import java.util.UUID;
 
 public class CreateListState implements ClientState {
     private final String databaseURL;
+    private final String userID;
     private String listID;
-    public CreateListState(String databaseURL) {
+    public CreateListState(String databaseURL, String userID) {
         this.databaseURL = databaseURL;
+        this.userID = userID;
     }
 
     @Override
@@ -27,7 +29,7 @@ public class CreateListState implements ClientState {
         printCreateListMenu();
 
 
-        return new OpenListsState(this.databaseURL, this.listID);
+        return new OpenListsState(this.databaseURL, this.userID, this.listID);
     }
 
     private void printCreateListMenu() {

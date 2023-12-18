@@ -7,14 +7,14 @@ import shoppingList.server.helper.Frame;
 import java.sql.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 
 public class Connections {
     private static final SimpleDateFormat TIMESTAMP_FORMAT = new SimpleDateFormat("HH:mm:ss");
+    public static final List<Integer> routersPorts = List.of(5000); //ONLY ONE ROUTER FOR NOW
 
-    public static boolean sendFrameRouter(ZMQ.Socket socket, String clientAddress, Frame frame) {
-        return socket.sendMore(clientAddress) && socket.sendMore("") && socket.send(new Gson().toJson(frame));
-    }
+    public static final Integer SERVER_PORT = 7000;
 
     public static void logEvent(String event, String details) {
         String timestamp = TIMESTAMP_FORMAT.format(new Date());
@@ -79,7 +79,6 @@ public class Connections {
                     StringBuilder sb = new StringBuilder();
                     while (rs.next()) {
                         sb.append(rs.getString("item"));
-                        sb.append("\n");
                     }
                     return sb.toString();
                 }
@@ -105,4 +104,5 @@ public class Connections {
         }
         return false;
     }
+
 }

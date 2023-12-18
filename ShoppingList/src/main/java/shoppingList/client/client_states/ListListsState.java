@@ -8,11 +8,13 @@ import java.util.Scanner;
 
 public class ListListsState implements ClientState {
     private final String databaseURL;
+    private final String userID;
     private final Scanner scanner = new Scanner(System.in);
     private ArrayList<String> lists = new ArrayList<>();
 
-    public ListListsState(String databaseURL) {
+    public ListListsState(String databaseURL, String userID) {
         this.databaseURL = databaseURL;
+        this.userID = userID;
     }
 
     @Override
@@ -36,11 +38,11 @@ public class ListListsState implements ClientState {
 
             switch (opts[0]) {
                 case "1":
-                    return new OpenListsState(this.databaseURL, listID);
+                    return new OpenListsState(this.databaseURL, this.userID, listID);
                 case "2":
-                    return new RemoveListState(this.databaseURL, listID);
+                    return new RemoveListState(this.databaseURL, this.userID, listID);
                 case "0":
-                    return new MainMenuState(this.databaseURL);
+                    return new MainMenuState(this.databaseURL, this.userID);
                 default:
                     System.out.println("Invalid option");
             }

@@ -7,12 +7,14 @@ import java.util.Scanner;
 
 public class UpdateItemState implements ClientState {
     private final String listID;
+    private final String userID;
     private final String databaseURL;
     private final Scanner scanner = new Scanner(System.in);
 
-    public UpdateItemState(String databaseURL, String listID) {
+    public UpdateItemState(String databaseURL, String userID, String listID) {
         this.databaseURL = databaseURL;
         this.listID = listID;
+        this.userID = userID;
     }
 
     @Override
@@ -26,14 +28,14 @@ public class UpdateItemState implements ClientState {
 
         if (!Connections.doesItemExistDB(this.databaseURL, this.listID, itemName)) {
             System.out.println("Item doesnt exists");
-            return new OpenListsState(this.databaseURL, this.listID);
+            return new OpenListsState(this.databaseURL, this.userID, this.listID);
         }
 
-        if (!Connections.updateItemDB(this.databaseURL, this.listID, itemName)) { //missing itemQuantity
+        if (!Connections.updateItemDB(this.databaseURL, this.userID, this.listID, itemName)) { //missing itemQuantity
             System.out.println("Failed to update item");
         }
 
-        return new OpenListsState(this.databaseURL, this.listID);
+        return new OpenListsState(this.databaseURL, this.userID, this.listID);
     }
 
     private void printUpdateItemMenu() {

@@ -6,9 +6,11 @@ import java.util.Scanner;
 
 public class MainMenuState implements ClientState {
     private final String databaseURL;
+    private final String userID;
     private final Scanner scanner = new Scanner(System.in);
-    public MainMenuState(String databaseURL) {
+    public MainMenuState(String databaseURL, String userID) {
         this.databaseURL = databaseURL;
+        this.userID = userID;
     }
 
     @Override
@@ -29,11 +31,11 @@ public class MainMenuState implements ClientState {
 
             switch (opts[0]) {
                 case "1":
-                    return new CreateListState(this.databaseURL);
+                    return new CreateListState(this.databaseURL, this.userID);
                 case "2":
-                    return new OpenListsState(this.databaseURL, listID);
+                    return new OpenListsState(this.databaseURL, this.userID, listID);
                 case "3":
-                    return new ListListsState(this.databaseURL);
+                    return new ListListsState(this.databaseURL, this.userID);
                 case "0":
                     return null;
                 default:
