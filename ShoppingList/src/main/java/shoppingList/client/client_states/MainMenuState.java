@@ -4,6 +4,8 @@ import shoppingList.client.helper.Connections;
 import shoppingList.client.helper.Utils;
 import java.util.Scanner;
 
+import static java.lang.System.exit;
+
 public class MainMenuState implements ClientState {
     private final String databaseURL;
     private final String userID;
@@ -37,7 +39,7 @@ public class MainMenuState implements ClientState {
                 case "3":
                     return new ListListsState(this.databaseURL, this.userID);
                 case "0":
-                    return null;
+                    exit(0);
                 default:
                     System.out.println("Invalid option");
             }

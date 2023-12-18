@@ -35,8 +35,6 @@ public class AddItemState implements ClientState {
         if (!Connections.addItemDB(this.databaseURL, this.userID, this.listID, itemName)) { //missing itemQuantity
             System.out.println("Failed to add item");
         }
-        //TESTING PURPOSES ONLY, NOT FINAL IMPLEMENTATION
-        Connections.pushListToServer(databaseURL, userID, listID);
 
         return new OpenListsState(this.databaseURL, this.userID, this.listID);
     }

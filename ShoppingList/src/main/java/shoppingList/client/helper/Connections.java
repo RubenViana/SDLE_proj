@@ -349,4 +349,14 @@ public class Connections {
         }
     }
 
+    public static void updateServerListsFromLocal(String databaseURL, String userID) {
+        ArrayList<String> lists = getListsDB(databaseURL);
+        if (lists == null) {
+            return;
+        }
+
+        for (String list : lists) {
+            pushListToServer(databaseURL, userID, list);
+        }
+    }
 }
