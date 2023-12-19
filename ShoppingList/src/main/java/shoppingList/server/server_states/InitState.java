@@ -17,6 +17,7 @@ public class InitState implements ServerState{
 
     @Override
     public ServerState run() {
+        Connections.logEvent("Initializing server", "{Server: " + this.serverID + "}");
 
         if (connectOrCreateDatabase()) {
             Connections.logEvent("Connected to database", "{Database: " + this.databaseURL + "}");

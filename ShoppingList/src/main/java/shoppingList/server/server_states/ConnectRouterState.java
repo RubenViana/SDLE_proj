@@ -22,11 +22,11 @@ public class ConnectRouterState implements ServerState {
         for (int port : Connections.routersPorts) {
             try (ZContext context = new ZContext()) {
                 ZMQ.Socket socket = context.createSocket(SocketType.REQ);
-                int serverPort = Connections.SERVER_PORT + this.serverID;
-                socket.setIdentity((serverPort + "").getBytes());
+                Integer serverPort = Connections.SERVER_PORT + this.serverID;
+                socket.setIdentity((this.serverID + "").getBytes());
                 socket.connect("tcp://localhost:" + port);
                 //Send server status message to router, to later enter the ring
-                socket.send(new Gson().toJson(new Frame(Frame.FrameStatus.SERVER_OK, Frame.FrameAction.SERVER_STATUS, "", "")));
+                socket.send(new Gson().toJson(new Frame(Frame.FrameStatus.SERVER_OK, Frame.FrameAction.SERVER_STATUS, serverPort + "", "")));
 
                 socket.setReceiveTimeOut(1000);
                 Frame response = new Gson().fromJson(socket.recvStr(), Frame.class);

@@ -5,6 +5,7 @@ import org.zeromq.SocketType;
 import org.zeromq.ZMQ;
 import org.zeromq.ZContext;
 import shoppingList.router.helper.Connections;
+import shoppingList.router.helper.ConsistentHashing;
 import shoppingList.router.helper.Frame;
 
 import java.util.*;
@@ -16,18 +17,16 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class Router {
     private final int port;
-    private ArrayList<String> servers = new ArrayList<>();
-    private Map<String, Long> lastStatusTimeServersMap = new HashMap<>();
+    private Map<Integer, Integer> servers = new HashMap<>(); //Map servers to their ports
+    private Map<Integer, Long> lastStatusTimeServersMap = new HashMap<>();
     private final ReadWriteLock serversLock = new ReentrantReadWriteLock();
     private final long STATUS_TIMEOUT = 10000;
+    private ConsistentHashing hashRing = new ConsistentHashing(3);
     public Router(int port) {
         this.port = port;
     }
 
     private void init() {
-
-        //TODO handle client requests
-        //TODO handle server requests
 
         try (ZContext context = new ZContext()) {
             ZMQ.Socket frontend = context.createSocket(SocketType.ROUTER);
@@ -36,11 +35,11 @@ public class Router {
             backend.bind("tcp://*:" + (port + 1000));//Maybe not needed
             Connections.logEvent( "Router Online", "{Frontend: " + port + " | Backend: " + (port + 1000) + "}");
 
-            /*// Create a ScheduledExecutorService with a single thread
+            // Create a ScheduledExecutorService with a single thread
             ScheduledExecutorService scheduler = Executors.newSingleThreadScheduledExecutor();
 
             // send server status to router every 5 seconds
-            scheduler.scheduleAtFixedRate(() -> {if (!servers.isEmpty()) {handleTimeoutServers();}}, 0, 1, TimeUnit.SECONDS);*/
+            scheduler.scheduleAtFixedRate(() -> {if (!servers.isEmpty()) {handleTimeoutServers();}}, 0, 1, TimeUnit.SECONDS);
 
             while (!Thread.currentThread().isInterrupted()) {
                 //  Initialize poll set
@@ -81,35 +80,57 @@ public class Router {
         }
     }
 
-    private void handlePullPushListRequest(ZMQ.Socket router, String client, Frame request) {
-        //TESTING ONLY
-        if (servers.isEmpty())
-            return;
+    private void handleTimeoutServers() {
+        for (Map.Entry<Integer, Long> entry : lastStatusTimeServersMap.entrySet()) {
+            if (System.currentTimeMillis() - entry.getValue() > STATUS_TIMEOUT) {
 
-        String serverAddr = servers.get(0);//TODO: change this to a hash ring
+                if (!Connections.checkServerStatus(entry.getKey(), servers.get(entry.getKey()) + "")) {
+                    serversLock.writeLock().lock();
+                    servers.remove(entry.getKey());
+                    hashRing.removeServer(entry.getKey());
+                    Connections.logEvent("Server_" + entry.getKey() + " removed from the ring", "{Server: " + servers.get(entry.getKey()) + "}");
+                    serversLock.writeLock().unlock();
+                    Connections.logEvent( "Server_" + entry.getKey() + " Offline", "{Server: " + servers.get(entry.getKey()) + "}");
+                }
+                else
+                    lastStatusTimeServersMap.put(entry.getKey(), System.currentTimeMillis());
+            }
+        }
+    }
+
+    private void handlePullPushListRequest(ZMQ.Socket router, String client, Frame request) {
+
+        Integer server = hashRing.getServer(request.getListID());
+
+        if (server == null) {
+            Connections.logEvent( "No server available", request.toString());
+            Connections.sendFrameFrontend(router, client, new Frame(Frame.FrameStatus.SERVER_ERROR, request.getAction(), request.getListID(), request.getListItem()));
+            return;
+        }
 
         //TODO handle replication of requests to other servers
 
         try (ZContext context = new ZContext()) {
             ZMQ.Socket socket = context.createSocket(SocketType.REQ);
-            socket.connect("tcp://localhost:" + serverAddr);
+            socket.connect("tcp://localhost:" + servers.get(server));
 
             socket.setReceiveTimeOut(1000);
 
-            Connections.logEvent( "Request from " + client + " to " + serverAddr, request.toString());
+            Connections.logEvent( "Request from " + client + " to Server_" + server, request.toString());
 
             socket.send(new Gson().toJson(request));
 
             Frame response = new Gson().fromJson(socket.recvStr(), Frame.class);
 
             if (response == null) {
-                Connections.logEvent( "No response from server " + serverAddr, request.toString());
+                Connections.logEvent( "No response from Server_" + server, request.toString());
                 Connections.sendFrameFrontend(router, client, new Frame(Frame.FrameStatus.SERVER_ERROR, request.getAction(), request.getListID(), request.getListItem()));
                 socket.close();
                 return;
             }
 
-            Connections.logEvent( "Response from " + serverAddr + " to " + client, response.toString());
+            Connections.logEvent( "Response from Server_" + server + " to " + client, response.toString());
+            lastStatusTimeServersMap.put(server, System.currentTimeMillis());// Update last status time
             Connections.sendFrameFrontend(router, client, response);
             socket.close();
 
@@ -117,14 +138,24 @@ public class Router {
     }
 
     private void handleServerStatus (ZMQ.Socket router, String server, Frame request) {
-        if (request.getStatus() == Frame.FrameStatus.SERVER_OK) {
-            if (!servers.contains(server)) {
-                servers.add(server);
-            }
-            lastStatusTimeServersMap.put(server, System.currentTimeMillis());
+        //Check if server is already in the servers list
+        if (servers.containsValue(Integer.parseInt(request.getListID()))) {
+            Connections.logEvent("Server_" + server + " already in the ring", "{Server: " + request.getListID() + "}");
+            Connections.sendFrameFrontend(router, server, new Frame(Frame.FrameStatus.ROUTER_OK, Frame.FrameAction.SERVER_STATUS, "", ""));
+            return;
         }
+        else {
+            serversLock.writeLock().lock();
+            servers.put(Integer.parseInt(server), Integer.parseInt(request.getListID()));
+            lastStatusTimeServersMap.put(Integer.parseInt(server), System.currentTimeMillis());
+            hashRing.addServer(Integer.parseInt(server));
+            Connections.logEvent("Server_" + server + " added to the ring", "{Server: " + servers.get(Integer.parseInt(server)) + "}");
+            serversLock.writeLock().unlock();
+        }
+
         // TODO: Send the future hash ring here to the server
-        Connections.logEvent("Server" + server + " Online", "{Server: " + server + "}");
+
+        Connections.logEvent("Server_" + server + " Online", "{Server: " + servers.get(Integer.parseInt(server)) + "}");
         Frame response = new Frame(Frame.FrameStatus.ROUTER_OK, Frame.FrameAction.SERVER_STATUS, "", "");
         Connections.sendFrameFrontend(router, server, response);
     }
