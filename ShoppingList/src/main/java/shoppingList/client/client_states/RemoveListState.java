@@ -1,5 +1,7 @@
 package shoppingList.client.client_states;
 
+import shoppingList.client.helper.Connections;
+
 public class RemoveListState implements ClientState{
     private final String databaseURL;
     private final String listID;
@@ -13,7 +15,10 @@ public class RemoveListState implements ClientState{
 
     @Override
     public ClientState run() {
-        //TODO: remove list from server
+
+        if (!Connections.removeListDB(this.databaseURL, this.listID)) {
+            System.out.println("Error removing list");
+        }
 
         return new MainMenuState(this.databaseURL, this.userID);
     }
