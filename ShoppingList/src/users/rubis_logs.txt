@@ -588,3 +588,1196 @@
 [19:12:2023 20:33:13]   Connecting to router at port 5000
 [19:12:2023 20:33:13]   Connected to router at port 5000
 [19:12:2023 20:33:14]   List 02300e87-3cb2-43fe-af72-574d5a9ad6a5 pushed to server
+[19:12:2023 21:11:40]   Connecting to router at port 5000
+[19:12:2023 21:11:42]   Timeout connecting to router at port 5000
+[19:12:2023 21:11:42]   Connecting to router at port 5001
+[19:12:2023 21:11:44]   Timeout connecting to router at port 5001
+[19:12:2023 21:11:44]   No router available
+[19:12:2023 21:11:44]   Connecting to router at port 5000
+[19:12:2023 21:11:46]   Timeout connecting to router at port 5000
+[19:12:2023 21:11:46]   Connecting to router at port 5001
+[19:12:2023 21:11:48]   Timeout connecting to router at port 5001
+[19:12:2023 21:11:48]   No router available
+[19:12:2023 21:11:48]   Connecting to router at port 5000
+[19:12:2023 21:11:50]   Timeout connecting to router at port 5000
+[19:12:2023 21:11:50]   Connecting to router at port 5001
+[19:12:2023 21:11:52]   Timeout connecting to router at port 5001
+[19:12:2023 21:11:52]   No router available
+[19:12:2023 21:11:52]   Connecting to router at port 5000
+[19:12:2023 21:11:54]   Timeout connecting to router at port 5000
+[19:12:2023 21:11:54]   Connecting to router at port 5001
+[19:12:2023 21:11:56]   Timeout connecting to router at port 5001
+[19:12:2023 21:11:56]   No router available
+[19:12:2023 21:13:55]   Connecting to router at port 5000
+[19:12:2023 21:13:57]   Timeout connecting to router at port 5000
+[19:12:2023 21:13:57]   Connecting to router at port 5001
+[19:12:2023 21:13:59]   Timeout connecting to router at port 5001
+[19:12:2023 21:13:59]   No router available
+[19:12:2023 21:13:59]   Connecting to router at port 5000
+[19:12:2023 21:14:01]   Timeout connecting to router at port 5000
+[19:12:2023 21:14:01]   Connecting to router at port 5001
+[19:12:2023 21:14:03]   Timeout connecting to router at port 5001
+[19:12:2023 21:14:03]   No router available
+[19:12:2023 21:14:03]   Connecting to router at port 5000
+[19:12:2023 21:14:05]   Timeout connecting to router at port 5000
+[19:12:2023 21:14:05]   Connecting to router at port 5001
+[19:12:2023 21:14:07]   Timeout connecting to router at port 5001
+[19:12:2023 21:14:07]   No router available
+[19:12:2023 21:14:07]   Connecting to router at port 5000
+[19:12:2023 21:14:09]   Timeout connecting to router at port 5000
+[19:12:2023 21:14:09]   Connecting to router at port 5001
+[19:12:2023 21:14:11]   Timeout connecting to router at port 5001
+[19:12:2023 21:14:11]   No router available
+[19:12:2023 21:14:11]   Connecting to router at port 5000
+[19:12:2023 21:14:13]   Timeout connecting to router at port 5000
+[19:12:2023 21:14:13]   Connecting to router at port 5001
+[19:12:2023 21:14:15]   Timeout connecting to router at port 5001
+[19:12:2023 21:14:15]   No router available
+[19:12:2023 21:14:15]   Connecting to router at port 5000
+[19:12:2023 21:14:17]   Timeout connecting to router at port 5000
+[19:12:2023 21:14:17]   Connecting to router at port 5001
+[19:12:2023 21:14:19]   Timeout connecting to router at port 5001
+[19:12:2023 21:14:19]   No router available
+[19:12:2023 21:14:19]   Connecting to router at port 5000
+[19:12:2023 21:14:21]   Timeout connecting to router at port 5000
+[19:12:2023 21:14:21]   Connecting to router at port 5001
+[19:12:2023 21:14:23]   Timeout connecting to router at port 5001
+[19:12:2023 21:14:23]   No router available
+[19:12:2023 21:14:23]   Connecting to router at port 5000
+[19:12:2023 21:14:25]   Timeout connecting to router at port 5000
+[19:12:2023 21:14:25]   Connecting to router at port 5001
+[19:12:2023 21:14:27]   Timeout connecting to router at port 5001
+[19:12:2023 21:14:27]   No router available
+[19:12:2023 21:14:27]   Connecting to router at port 5000
+[19:12:2023 21:14:29]   Timeout connecting to router at port 5000
+[19:12:2023 21:14:29]   Connecting to router at port 5001
+[19:12:2023 21:14:31]   Timeout connecting to router at port 5001
+[19:12:2023 21:14:31]   No router available
+[19:12:2023 21:14:31]   Connecting to router at port 5000
+[19:12:2023 21:14:33]   Timeout connecting to router at port 5000
+[19:12:2023 21:14:33]   Connecting to router at port 5001
+[19:12:2023 21:14:35]   Timeout connecting to router at port 5001
+[19:12:2023 21:14:35]   No router available
+[19:12:2023 21:14:35]   Connecting to router at port 5000
+[19:12:2023 21:14:37]   Timeout connecting to router at port 5000
+[19:12:2023 21:14:37]   Connecting to router at port 5001
+[19:12:2023 21:14:39]   Timeout connecting to router at port 5001
+[19:12:2023 21:14:39]   No router available
+[19:12:2023 21:14:39]   Connecting to router at port 5000
+[19:12:2023 21:14:41]   Timeout connecting to router at port 5000
+[19:12:2023 21:14:41]   Connecting to router at port 5001
+[19:12:2023 21:14:43]   Timeout connecting to router at port 5001
+[19:12:2023 21:14:43]   No router available
+[19:12:2023 21:14:43]   Connecting to router at port 5000
+[19:12:2023 21:14:45]   Timeout connecting to router at port 5000
+[19:12:2023 21:14:45]   Connecting to router at port 5001
+[19:12:2023 21:14:47]   Timeout connecting to router at port 5001
+[19:12:2023 21:14:47]   No router available
+[19:12:2023 21:14:47]   Connecting to router at port 5000
+[19:12:2023 21:14:49]   Timeout connecting to router at port 5000
+[19:12:2023 21:14:49]   Connecting to router at port 5001
+[19:12:2023 21:14:51]   Timeout connecting to router at port 5001
+[19:12:2023 21:14:51]   No router available
+[19:12:2023 21:14:51]   Connecting to router at port 5000
+[19:12:2023 21:14:53]   Timeout connecting to router at port 5000
+[19:12:2023 21:14:53]   Connecting to router at port 5001
+[19:12:2023 21:14:55]   Timeout connecting to router at port 5001
+[19:12:2023 21:14:55]   No router available
+[19:12:2023 21:14:55]   Connecting to router at port 5000
+[19:12:2023 21:14:57]   Timeout connecting to router at port 5000
+[19:12:2023 21:14:57]   Connecting to router at port 5001
+[19:12:2023 21:14:59]   Timeout connecting to router at port 5001
+[19:12:2023 21:14:59]   No router available
+[19:12:2023 21:14:59]   Connecting to router at port 5000
+[19:12:2023 21:15:01]   Timeout connecting to router at port 5000
+[19:12:2023 21:15:01]   Connecting to router at port 5001
+[19:12:2023 21:15:03]   Timeout connecting to router at port 5001
+[19:12:2023 21:15:03]   No router available
+[19:12:2023 21:15:03]   Connecting to router at port 5000
+[19:12:2023 21:15:05]   Timeout connecting to router at port 5000
+[19:12:2023 21:15:05]   Connecting to router at port 5001
+[19:12:2023 21:15:07]   Timeout connecting to router at port 5001
+[19:12:2023 21:15:07]   No router available
+[19:12:2023 21:15:07]   Connecting to router at port 5000
+[19:12:2023 21:15:09]   Timeout connecting to router at port 5000
+[19:12:2023 21:15:09]   Connecting to router at port 5001
+[19:12:2023 21:15:11]   Timeout connecting to router at port 5001
+[19:12:2023 21:15:11]   No router available
+[19:12:2023 21:15:11]   Connecting to router at port 5000
+[19:12:2023 21:15:13]   Timeout connecting to router at port 5000
+[19:12:2023 21:15:13]   Connecting to router at port 5001
+[19:12:2023 21:15:15]   Timeout connecting to router at port 5001
+[19:12:2023 21:15:15]   No router available
+[19:12:2023 21:15:15]   Connecting to router at port 5000
+[19:12:2023 21:15:18]   Connecting to router at port 5000
+[19:12:2023 21:15:20]   Timeout connecting to router at port 5000
+[19:12:2023 21:15:20]   Connecting to router at port 5001
+[19:12:2023 21:15:22]   Timeout connecting to router at port 5001
+[19:12:2023 21:15:22]   No router available
+[19:12:2023 21:15:22]   Connecting to router at port 5000
+[19:12:2023 21:15:24]   Timeout connecting to router at port 5000
+[19:12:2023 21:15:24]   Connecting to router at port 5001
+[19:12:2023 21:15:26]   Timeout connecting to router at port 5001
+[19:12:2023 21:15:26]   No router available
+[19:12:2023 21:15:26]   Connecting to router at port 5000
+[19:12:2023 21:15:28]   Timeout connecting to router at port 5000
+[19:12:2023 21:15:28]   Connecting to router at port 5001
+[19:12:2023 21:15:30]   Timeout connecting to router at port 5001
+[19:12:2023 21:15:30]   No router available
+[19:12:2023 21:15:30]   Connecting to router at port 5000
+[19:12:2023 21:15:32]   Timeout connecting to router at port 5000
+[19:12:2023 21:15:32]   Connecting to router at port 5001
+[19:12:2023 21:15:34]   Timeout connecting to router at port 5001
+[19:12:2023 21:15:34]   No router available
+[19:12:2023 21:15:34]   Connecting to router at port 5000
+[19:12:2023 21:15:36]   Timeout connecting to router at port 5000
+[19:12:2023 21:15:36]   Connecting to router at port 5001
+[19:12:2023 21:15:38]   Timeout connecting to router at port 5001
+[19:12:2023 21:15:38]   No router available
+[19:12:2023 21:15:38]   Connecting to router at port 5000
+[19:12:2023 21:15:40]   Timeout connecting to router at port 5000
+[19:12:2023 21:15:40]   Connecting to router at port 5001
+[19:12:2023 21:15:42]   Timeout connecting to router at port 5001
+[19:12:2023 21:15:42]   No router available
+[19:12:2023 21:15:42]   Connecting to router at port 5000
+[19:12:2023 21:15:44]   Timeout connecting to router at port 5000
+[19:12:2023 21:15:44]   Connecting to router at port 5001
+[19:12:2023 21:15:46]   Timeout connecting to router at port 5001
+[19:12:2023 21:15:46]   No router available
+[19:12:2023 21:15:46]   Connecting to router at port 5000
+[19:12:2023 21:15:48]   Timeout connecting to router at port 5000
+[19:12:2023 21:15:48]   Connecting to router at port 5001
+[19:12:2023 21:15:50]   Timeout connecting to router at port 5001
+[19:12:2023 21:15:50]   No router available
+[19:12:2023 21:15:50]   Connecting to router at port 5000
+[19:12:2023 21:15:52]   Timeout connecting to router at port 5000
+[19:12:2023 21:15:52]   Connecting to router at port 5001
+[19:12:2023 21:15:54]   Timeout connecting to router at port 5001
+[19:12:2023 21:15:54]   No router available
+[19:12:2023 21:15:54]   Connecting to router at port 5000
+[19:12:2023 21:15:56]   Timeout connecting to router at port 5000
+[19:12:2023 21:15:56]   Connecting to router at port 5001
+[19:12:2023 21:15:58]   Timeout connecting to router at port 5001
+[19:12:2023 21:15:58]   No router available
+[19:12:2023 21:15:58]   Connecting to router at port 5000
+[19:12:2023 21:16:00]   Timeout connecting to router at port 5000
+[19:12:2023 21:16:00]   Connecting to router at port 5001
+[19:12:2023 21:16:02]   Timeout connecting to router at port 5001
+[19:12:2023 21:16:02]   No router available
+[19:12:2023 21:16:02]   Connecting to router at port 5000
+[19:12:2023 21:16:04]   Timeout connecting to router at port 5000
+[19:12:2023 21:16:04]   Connecting to router at port 5001
+[19:12:2023 21:16:06]   Timeout connecting to router at port 5001
+[19:12:2023 21:16:06]   No router available
+[19:12:2023 21:16:06]   Connecting to router at port 5000
+[19:12:2023 21:16:08]   Timeout connecting to router at port 5000
+[19:12:2023 21:16:08]   Connecting to router at port 5001
+[19:12:2023 21:16:10]   Timeout connecting to router at port 5001
+[19:12:2023 21:16:10]   No router available
+[19:12:2023 21:16:10]   Connecting to router at port 5000
+[19:12:2023 21:16:12]   Timeout connecting to router at port 5000
+[19:12:2023 21:16:12]   Connecting to router at port 5001
+[19:12:2023 21:16:14]   Timeout connecting to router at port 5001
+[19:12:2023 21:16:14]   No router available
+[19:12:2023 21:16:14]   Connecting to router at port 5000
+[19:12:2023 21:16:16]   Timeout connecting to router at port 5000
+[19:12:2023 21:16:16]   Connecting to router at port 5001
+[19:12:2023 21:16:18]   Timeout connecting to router at port 5001
+[19:12:2023 21:16:18]   No router available
+[19:12:2023 21:16:18]   Connecting to router at port 5000
+[19:12:2023 21:16:21]   Timeout connecting to router at port 5000
+[19:12:2023 21:16:21]   Connecting to router at port 5001
+[19:12:2023 21:16:23]   Timeout connecting to router at port 5001
+[19:12:2023 21:16:23]   No router available
+[19:12:2023 21:16:23]   Connecting to router at port 5000
+[19:12:2023 21:16:25]   Timeout connecting to router at port 5000
+[19:12:2023 21:16:25]   Connecting to router at port 5001
+[19:12:2023 21:16:27]   Timeout connecting to router at port 5001
+[19:12:2023 21:16:27]   No router available
+[19:12:2023 21:16:27]   Connecting to router at port 5000
+[19:12:2023 21:16:29]   Timeout connecting to router at port 5000
+[19:12:2023 21:16:29]   Connecting to router at port 5001
+[19:12:2023 21:16:31]   Timeout connecting to router at port 5001
+[19:12:2023 21:16:31]   No router available
+[19:12:2023 21:16:31]   Connecting to router at port 5000
+[19:12:2023 21:16:33]   Timeout connecting to router at port 5000
+[19:12:2023 21:16:33]   Connecting to router at port 5001
+[19:12:2023 21:16:35]   Timeout connecting to router at port 5001
+[19:12:2023 21:16:35]   No router available
+[19:12:2023 21:16:35]   Connecting to router at port 5000
+[19:12:2023 21:16:37]   Timeout connecting to router at port 5000
+[19:12:2023 21:16:37]   Connecting to router at port 5001
+[19:12:2023 21:16:39]   Timeout connecting to router at port 5001
+[19:12:2023 21:16:39]   No router available
+[19:12:2023 21:16:39]   Connecting to router at port 5000
+[19:12:2023 21:16:41]   Timeout connecting to router at port 5000
+[19:12:2023 21:16:41]   Connecting to router at port 5001
+[19:12:2023 21:16:43]   Timeout connecting to router at port 5001
+[19:12:2023 21:16:43]   No router available
+[19:12:2023 21:16:43]   Connecting to router at port 5000
+[19:12:2023 21:16:45]   Timeout connecting to router at port 5000
+[19:12:2023 21:16:45]   Connecting to router at port 5001
+[19:12:2023 21:16:47]   Timeout connecting to router at port 5001
+[19:12:2023 21:16:47]   No router available
+[19:12:2023 21:16:47]   Connecting to router at port 5000
+[19:12:2023 21:16:49]   Timeout connecting to router at port 5000
+[19:12:2023 21:16:49]   Connecting to router at port 5001
+[19:12:2023 21:16:51]   Timeout connecting to router at port 5001
+[19:12:2023 21:16:51]   No router available
+[19:12:2023 21:16:51]   Connecting to router at port 5000
+[19:12:2023 21:16:53]   Timeout connecting to router at port 5000
+[19:12:2023 21:16:53]   Connecting to router at port 5001
+[19:12:2023 21:16:55]   Timeout connecting to router at port 5001
+[19:12:2023 21:16:55]   No router available
+[19:12:2023 21:16:55]   Connecting to router at port 5000
+[19:12:2023 21:16:57]   Timeout connecting to router at port 5000
+[19:12:2023 21:16:57]   Connecting to router at port 5001
+[19:12:2023 21:16:59]   Timeout connecting to router at port 5001
+[19:12:2023 21:16:59]   No router available
+[19:12:2023 21:16:59]   Connecting to router at port 5000
+[19:12:2023 21:17:01]   Timeout connecting to router at port 5000
+[19:12:2023 21:17:01]   Connecting to router at port 5001
+[19:12:2023 21:17:03]   Connecting to router at port 5000
+[19:12:2023 21:17:05]   Timeout connecting to router at port 5000
+[19:12:2023 21:17:05]   Connecting to router at port 5001
+[19:12:2023 21:17:07]   Timeout connecting to router at port 5001
+[19:12:2023 21:17:07]   No router available
+[19:12:2023 21:17:07]   Connecting to router at port 5000
+[19:12:2023 21:17:09]   Timeout connecting to router at port 5000
+[19:12:2023 21:17:09]   Connecting to router at port 5001
+[19:12:2023 21:17:11]   Timeout connecting to router at port 5001
+[19:12:2023 21:17:11]   No router available
+[19:12:2023 21:17:11]   Connecting to router at port 5000
+[19:12:2023 21:17:13]   Timeout connecting to router at port 5000
+[19:12:2023 21:17:13]   Connecting to router at port 5001
+[19:12:2023 21:17:15]   Timeout connecting to router at port 5001
+[19:12:2023 21:17:15]   No router available
+[19:12:2023 21:17:15]   Connecting to router at port 5000
+[19:12:2023 21:17:17]   Timeout connecting to router at port 5000
+[19:12:2023 21:17:17]   Connecting to router at port 5001
+[19:12:2023 21:17:19]   Timeout connecting to router at port 5001
+[19:12:2023 21:17:19]   No router available
+[19:12:2023 21:17:19]   Connecting to router at port 5000
+[19:12:2023 21:17:21]   Timeout connecting to router at port 5000
+[19:12:2023 21:17:21]   Connecting to router at port 5001
+[19:12:2023 21:17:23]   Timeout connecting to router at port 5001
+[19:12:2023 21:17:23]   No router available
+[19:12:2023 21:17:23]   Connecting to router at port 5000
+[19:12:2023 21:17:25]   Timeout connecting to router at port 5000
+[19:12:2023 21:17:25]   Connecting to router at port 5001
+[19:12:2023 21:17:28]   Timeout connecting to router at port 5001
+[19:12:2023 21:17:28]   No router available
+[19:12:2023 21:17:28]   Connecting to router at port 5000
+[19:12:2023 21:17:30]   Timeout connecting to router at port 5000
+[19:12:2023 21:17:30]   Connecting to router at port 5001
+[19:12:2023 21:17:32]   Timeout connecting to router at port 5001
+[19:12:2023 21:17:32]   No router available
+[19:12:2023 21:17:32]   Connecting to router at port 5000
+[19:12:2023 21:17:34]   Timeout connecting to router at port 5000
+[19:12:2023 21:17:34]   Connecting to router at port 5001
+[19:12:2023 21:17:36]   Timeout connecting to router at port 5001
+[19:12:2023 21:17:36]   No router available
+[19:12:2023 21:17:36]   Connecting to router at port 5000
+[19:12:2023 21:17:38]   Timeout connecting to router at port 5000
+[19:12:2023 21:17:38]   Connecting to router at port 5001
+[19:12:2023 21:17:40]   Timeout connecting to router at port 5001
+[19:12:2023 21:17:40]   No router available
+[19:12:2023 21:17:40]   Connecting to router at port 5000
+[19:12:2023 21:17:42]   Timeout connecting to router at port 5000
+[19:12:2023 21:17:42]   Connecting to router at port 5001
+[19:12:2023 21:17:44]   Timeout connecting to router at port 5001
+[19:12:2023 21:17:44]   No router available
+[19:12:2023 21:17:44]   Connecting to router at port 5000
+[19:12:2023 21:17:46]   Timeout connecting to router at port 5000
+[19:12:2023 21:17:46]   Connecting to router at port 5001
+[19:12:2023 21:17:48]   Timeout connecting to router at port 5001
+[19:12:2023 21:17:48]   No router available
+[19:12:2023 21:17:48]   Connecting to router at port 5000
+[19:12:2023 21:17:50]   Timeout connecting to router at port 5000
+[19:12:2023 21:17:50]   Connecting to router at port 5001
+[19:12:2023 21:17:52]   Timeout connecting to router at port 5001
+[19:12:2023 21:17:52]   No router available
+[19:12:2023 21:17:52]   Connecting to router at port 5000
+[19:12:2023 21:17:54]   Timeout connecting to router at port 5000
+[19:12:2023 21:17:54]   Connecting to router at port 5001
+[19:12:2023 21:17:56]   Timeout connecting to router at port 5001
+[19:12:2023 21:17:56]   No router available
+[19:12:2023 21:17:56]   Connecting to router at port 5000
+[19:12:2023 21:17:58]   Timeout connecting to router at port 5000
+[19:12:2023 21:17:58]   Connecting to router at port 5001
+[19:12:2023 21:18:00]   Timeout connecting to router at port 5001
+[19:12:2023 21:18:00]   No router available
+[19:12:2023 21:18:00]   Connecting to router at port 5000
+[19:12:2023 21:18:02]   Timeout connecting to router at port 5000
+[19:12:2023 21:18:02]   Connecting to router at port 5001
+[19:12:2023 21:18:04]   Timeout connecting to router at port 5001
+[19:12:2023 21:18:04]   No router available
+[19:12:2023 21:18:04]   Connecting to router at port 5000
+[19:12:2023 21:18:06]   Timeout connecting to router at port 5000
+[19:12:2023 21:18:06]   Connecting to router at port 5001
+[19:12:2023 21:18:08]   Timeout connecting to router at port 5001
+[19:12:2023 21:18:08]   No router available
+[19:12:2023 21:18:08]   Connecting to router at port 5000
+[19:12:2023 21:18:10]   Timeout connecting to router at port 5000
+[19:12:2023 21:18:10]   Connecting to router at port 5001
+[19:12:2023 21:18:12]   Timeout connecting to router at port 5001
+[19:12:2023 21:18:12]   No router available
+[19:12:2023 21:18:12]   Connecting to router at port 5000
+[19:12:2023 21:18:14]   Timeout connecting to router at port 5000
+[19:12:2023 21:18:14]   Connecting to router at port 5001
+[19:12:2023 21:18:16]   Timeout connecting to router at port 5001
+[19:12:2023 21:18:16]   No router available
+[19:12:2023 21:18:16]   Connecting to router at port 5000
+[19:12:2023 21:18:18]   Timeout connecting to router at port 5000
+[19:12:2023 21:18:18]   Connecting to router at port 5001
+[19:12:2023 21:18:20]   Timeout connecting to router at port 5001
+[19:12:2023 21:18:20]   No router available
+[19:12:2023 21:18:20]   Connecting to router at port 5000
+[19:12:2023 21:18:22]   Timeout connecting to router at port 5000
+[19:12:2023 21:18:22]   Connecting to router at port 5001
+[19:12:2023 21:18:24]   Timeout connecting to router at port 5001
+[19:12:2023 21:18:24]   No router available
+[19:12:2023 21:18:24]   Connecting to router at port 5000
+[19:12:2023 21:18:26]   Timeout connecting to router at port 5000
+[19:12:2023 21:18:26]   Connecting to router at port 5001
+[19:12:2023 21:18:28]   Timeout connecting to router at port 5001
+[19:12:2023 21:18:28]   No router available
+[19:12:2023 21:18:28]   Connecting to router at port 5000
+[19:12:2023 21:18:30]   Timeout connecting to router at port 5000
+[19:12:2023 21:18:30]   Connecting to router at port 5001
+[19:12:2023 21:18:32]   Timeout connecting to router at port 5001
+[19:12:2023 21:18:32]   No router available
+[19:12:2023 21:18:32]   Connecting to router at port 5000
+[19:12:2023 21:18:34]   Timeout connecting to router at port 5000
+[19:12:2023 21:18:34]   Connecting to router at port 5001
+[19:12:2023 21:18:36]   Timeout connecting to router at port 5001
+[19:12:2023 21:18:36]   No router available
+[19:12:2023 21:18:36]   Connecting to router at port 5000
+[19:12:2023 21:18:38]   Timeout connecting to router at port 5000
+[19:12:2023 21:18:38]   Connecting to router at port 5001
+[19:12:2023 21:18:40]   Timeout connecting to router at port 5001
+[19:12:2023 21:18:40]   No router available
+[19:12:2023 21:18:40]   Connecting to router at port 5000
+[19:12:2023 21:18:42]   Timeout connecting to router at port 5000
+[19:12:2023 21:18:42]   Connecting to router at port 5001
+[19:12:2023 21:18:44]   Timeout connecting to router at port 5001
+[19:12:2023 21:18:44]   No router available
+[19:12:2023 21:18:44]   Connecting to router at port 5000
+[19:12:2023 21:18:46]   Timeout connecting to router at port 5000
+[19:12:2023 21:18:46]   Connecting to router at port 5001
+[19:12:2023 21:18:48]   Timeout connecting to router at port 5001
+[19:12:2023 21:18:48]   No router available
+[19:12:2023 21:18:48]   Connecting to router at port 5000
+[19:12:2023 21:18:50]   Timeout connecting to router at port 5000
+[19:12:2023 21:18:50]   Connecting to router at port 5001
+[19:12:2023 21:18:52]   Timeout connecting to router at port 5001
+[19:12:2023 21:18:52]   No router available
+[19:12:2023 21:18:52]   Connecting to router at port 5000
+[19:12:2023 21:18:54]   Timeout connecting to router at port 5000
+[19:12:2023 21:18:54]   Connecting to router at port 5001
+[19:12:2023 21:18:56]   Timeout connecting to router at port 5001
+[19:12:2023 21:18:56]   No router available
+[19:12:2023 21:18:56]   Connecting to router at port 5000
+[19:12:2023 21:18:58]   Timeout connecting to router at port 5000
+[19:12:2023 21:18:58]   Connecting to router at port 5001
+[19:12:2023 21:19:00]   Timeout connecting to router at port 5001
+[19:12:2023 21:19:00]   No router available
+[19:12:2023 21:19:00]   Connecting to router at port 5000
+[19:12:2023 21:19:02]   Timeout connecting to router at port 5000
+[19:12:2023 21:19:02]   Connecting to router at port 5001
+[19:12:2023 21:19:04]   Timeout connecting to router at port 5001
+[19:12:2023 21:19:04]   No router available
+[19:12:2023 21:19:04]   Connecting to router at port 5000
+[19:12:2023 21:19:06]   Timeout connecting to router at port 5000
+[19:12:2023 21:19:06]   Connecting to router at port 5001
+[19:12:2023 21:19:08]   Timeout connecting to router at port 5001
+[19:12:2023 21:19:08]   No router available
+[19:12:2023 21:19:08]   Connecting to router at port 5000
+[19:12:2023 21:19:10]   Timeout connecting to router at port 5000
+[19:12:2023 21:19:10]   Connecting to router at port 5001
+[19:12:2023 21:19:12]   Timeout connecting to router at port 5001
+[19:12:2023 21:19:12]   No router available
+[19:12:2023 21:19:12]   Connecting to router at port 5000
+[19:12:2023 21:19:14]   Timeout connecting to router at port 5000
+[19:12:2023 21:19:14]   Connecting to router at port 5001
+[19:12:2023 21:19:16]   Timeout connecting to router at port 5001
+[19:12:2023 21:19:16]   No router available
+[19:12:2023 21:19:16]   Connecting to router at port 5000
+[19:12:2023 21:19:18]   Timeout connecting to router at port 5000
+[19:12:2023 21:19:18]   Connecting to router at port 5001
+[19:12:2023 21:19:20]   Timeout connecting to router at port 5001
+[19:12:2023 21:19:20]   No router available
+[19:12:2023 21:19:20]   Connecting to router at port 5000
+[19:12:2023 21:19:22]   Timeout connecting to router at port 5000
+[19:12:2023 21:19:22]   Connecting to router at port 5001
+[19:12:2023 21:19:24]   Timeout connecting to router at port 5001
+[19:12:2023 21:19:24]   No router available
+[19:12:2023 21:19:24]   Connecting to router at port 5000
+[19:12:2023 21:19:26]   Timeout connecting to router at port 5000
+[19:12:2023 21:19:26]   Connecting to router at port 5001
+[19:12:2023 21:19:28]   Timeout connecting to router at port 5001
+[19:12:2023 21:19:28]   No router available
+[19:12:2023 21:19:28]   Connecting to router at port 5000
+[19:12:2023 21:19:30]   Timeout connecting to router at port 5000
+[19:12:2023 21:19:30]   Connecting to router at port 5001
+[19:12:2023 21:19:32]   Timeout connecting to router at port 5001
+[19:12:2023 21:19:32]   No router available
+[19:12:2023 21:19:32]   Connecting to router at port 5000
+[19:12:2023 21:19:34]   Timeout connecting to router at port 5000
+[19:12:2023 21:19:34]   Connecting to router at port 5001
+[19:12:2023 21:19:36]   Timeout connecting to router at port 5001
+[19:12:2023 21:19:36]   No router available
+[19:12:2023 21:19:36]   Connecting to router at port 5000
+[19:12:2023 21:19:38]   Timeout connecting to router at port 5000
+[19:12:2023 21:19:38]   Connecting to router at port 5001
+[19:12:2023 21:19:41]   Timeout connecting to router at port 5001
+[19:12:2023 21:19:41]   No router available
+[19:12:2023 21:19:41]   Connecting to router at port 5000
+[19:12:2023 21:19:43]   Timeout connecting to router at port 5000
+[19:12:2023 21:19:43]   Connecting to router at port 5001
+[19:12:2023 21:19:45]   Timeout connecting to router at port 5001
+[19:12:2023 21:19:45]   No router available
+[19:12:2023 21:19:45]   Connecting to router at port 5000
+[19:12:2023 21:19:47]   Timeout connecting to router at port 5000
+[19:12:2023 21:19:47]   Connecting to router at port 5001
+[19:12:2023 21:19:49]   Timeout connecting to router at port 5001
+[19:12:2023 21:19:49]   No router available
+[19:12:2023 21:19:49]   Connecting to router at port 5000
+[19:12:2023 21:19:51]   Timeout connecting to router at port 5000
+[19:12:2023 21:19:51]   Connecting to router at port 5001
+[19:12:2023 21:19:53]   Timeout connecting to router at port 5001
+[19:12:2023 21:19:53]   No router available
+[19:12:2023 21:19:53]   Connecting to router at port 5000
+[19:12:2023 21:19:55]   Timeout connecting to router at port 5000
+[19:12:2023 21:19:55]   Connecting to router at port 5001
+[19:12:2023 21:19:57]   Timeout connecting to router at port 5001
+[19:12:2023 21:19:57]   No router available
+[19:12:2023 21:19:57]   Connecting to router at port 5000
+[19:12:2023 21:19:59]   Timeout connecting to router at port 5000
+[19:12:2023 21:19:59]   Connecting to router at port 5001
+[19:12:2023 21:20:01]   Timeout connecting to router at port 5001
+[19:12:2023 21:20:01]   No router available
+[19:12:2023 21:20:01]   Connecting to router at port 5000
+[19:12:2023 21:20:03]   Timeout connecting to router at port 5000
+[19:12:2023 21:20:03]   Connecting to router at port 5001
+[19:12:2023 21:20:05]   Timeout connecting to router at port 5001
+[19:12:2023 21:20:05]   No router available
+[19:12:2023 21:20:05]   Connecting to router at port 5000
+[19:12:2023 21:20:07]   Timeout connecting to router at port 5000
+[19:12:2023 21:20:07]   Connecting to router at port 5001
+[19:12:2023 21:20:09]   Timeout connecting to router at port 5001
+[19:12:2023 21:20:09]   No router available
+[19:12:2023 21:20:09]   Connecting to router at port 5000
+[19:12:2023 21:20:11]   Timeout connecting to router at port 5000
+[19:12:2023 21:20:11]   Connecting to router at port 5001
+[19:12:2023 21:20:13]   Timeout connecting to router at port 5001
+[19:12:2023 21:20:13]   No router available
+[19:12:2023 21:20:13]   Connecting to router at port 5000
+[19:12:2023 21:20:15]   Timeout connecting to router at port 5000
+[19:12:2023 21:20:15]   Connecting to router at port 5001
+[19:12:2023 21:20:17]   Timeout connecting to router at port 5001
+[19:12:2023 21:20:17]   No router available
+[19:12:2023 21:20:17]   Connecting to router at port 5000
+[19:12:2023 21:20:19]   Timeout connecting to router at port 5000
+[19:12:2023 21:20:19]   Connecting to router at port 5001
+[19:12:2023 21:20:21]   Timeout connecting to router at port 5001
+[19:12:2023 21:20:21]   No router available
+[19:12:2023 21:20:21]   Connecting to router at port 5000
+[19:12:2023 21:20:23]   Timeout connecting to router at port 5000
+[19:12:2023 21:20:23]   Connecting to router at port 5001
+[19:12:2023 21:20:25]   Timeout connecting to router at port 5001
+[19:12:2023 21:20:25]   No router available
+[19:12:2023 21:20:25]   Connecting to router at port 5000
+[19:12:2023 21:20:27]   Timeout connecting to router at port 5000
+[19:12:2023 21:20:27]   Connecting to router at port 5001
+[19:12:2023 21:20:29]   Timeout connecting to router at port 5001
+[19:12:2023 21:20:29]   No router available
+[19:12:2023 21:20:29]   Connecting to router at port 5000
+[19:12:2023 21:20:31]   Timeout connecting to router at port 5000
+[19:12:2023 21:20:31]   Connecting to router at port 5001
+[19:12:2023 21:20:33]   Timeout connecting to router at port 5001
+[19:12:2023 21:20:33]   No router available
+[19:12:2023 21:20:33]   Connecting to router at port 5000
+[19:12:2023 21:20:35]   Timeout connecting to router at port 5000
+[19:12:2023 21:20:35]   Connecting to router at port 5001
+[19:12:2023 21:20:37]   Timeout connecting to router at port 5001
+[19:12:2023 21:20:37]   No router available
+[19:12:2023 21:20:37]   Connecting to router at port 5000
+[19:12:2023 21:20:39]   Timeout connecting to router at port 5000
+[19:12:2023 21:20:39]   Connecting to router at port 5001
+[19:12:2023 21:20:41]   Timeout connecting to router at port 5001
+[19:12:2023 21:20:41]   No router available
+[19:12:2023 21:20:41]   Connecting to router at port 5000
+[19:12:2023 21:20:43]   Timeout connecting to router at port 5000
+[19:12:2023 21:20:43]   Connecting to router at port 5001
+[19:12:2023 21:20:45]   Timeout connecting to router at port 5001
+[19:12:2023 21:20:45]   No router available
+[19:12:2023 21:20:45]   Connecting to router at port 5000
+[19:12:2023 21:20:47]   Timeout connecting to router at port 5000
+[19:12:2023 21:20:47]   Connecting to router at port 5001
+[19:12:2023 21:20:49]   Timeout connecting to router at port 5001
+[19:12:2023 21:20:49]   No router available
+[19:12:2023 21:20:49]   Connecting to router at port 5000
+[19:12:2023 21:20:49]   Connected to router at port 5000
+[19:12:2023 21:20:49]   Error pulling list 0c056a5a-7296-411d-a462-2e9a0977d4f4 from server
+[19:12:2023 21:20:49]   Connecting to router at port 5000
+[19:12:2023 21:20:49]   Connected to router at port 5000
+[19:12:2023 21:20:49]   Error pushing list 0c056a5a-7296-411d-a462-2e9a0977d4f4 to server
+[19:12:2023 21:20:49]   Connecting to router at port 5000
+[19:12:2023 21:20:49]   Connected to router at port 5000
+[19:12:2023 21:20:49]   Error pulling list 0c056a5a-7296-411d-a462-2e9a0977d4f4 from server
+[19:12:2023 21:20:49]   Connecting to router at port 5000
+[19:12:2023 21:20:49]   Connected to router at port 5000
+[19:12:2023 21:20:49]   Error pushing list 0c056a5a-7296-411d-a462-2e9a0977d4f4 to server
+[19:12:2023 21:20:49]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pulling list 0c056a5a-7296-411d-a462-2e9a0977d4f4 from server
+[19:12:2023 21:20:50]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pushing list 0c056a5a-7296-411d-a462-2e9a0977d4f4 to server
+[19:12:2023 21:20:50]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pulling list 0c056a5a-7296-411d-a462-2e9a0977d4f4 from server
+[19:12:2023 21:20:50]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pushing list 0c056a5a-7296-411d-a462-2e9a0977d4f4 to server
+[19:12:2023 21:20:50]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pulling list 0c056a5a-7296-411d-a462-2e9a0977d4f4 from server
+[19:12:2023 21:20:50]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pushing list 0c056a5a-7296-411d-a462-2e9a0977d4f4 to server
+[19:12:2023 21:20:50]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pulling list 0c056a5a-7296-411d-a462-2e9a0977d4f4 from server
+[19:12:2023 21:20:50]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pushing list 0c056a5a-7296-411d-a462-2e9a0977d4f4 to server
+[19:12:2023 21:20:50]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pulling list 0c056a5a-7296-411d-a462-2e9a0977d4f4 from server
+[19:12:2023 21:20:50]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pushing list 0c056a5a-7296-411d-a462-2e9a0977d4f4 to server
+[19:12:2023 21:20:50]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pulling list 0c056a5a-7296-411d-a462-2e9a0977d4f4 from server
+[19:12:2023 21:20:50]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pushing list 0c056a5a-7296-411d-a462-2e9a0977d4f4 to server
+[19:12:2023 21:20:50]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pulling list 0c056a5a-7296-411d-a462-2e9a0977d4f4 from server
+[19:12:2023 21:20:50]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pushing list 0c056a5a-7296-411d-a462-2e9a0977d4f4 to server
+[19:12:2023 21:20:50]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pulling list 0c056a5a-7296-411d-a462-2e9a0977d4f4 from server
+[19:12:2023 21:20:50]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pushing list 0c056a5a-7296-411d-a462-2e9a0977d4f4 to server
+[19:12:2023 21:20:50]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pulling list 0c056a5a-7296-411d-a462-2e9a0977d4f4 from server
+[19:12:2023 21:20:50]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pushing list 0c056a5a-7296-411d-a462-2e9a0977d4f4 to server
+[19:12:2023 21:20:50]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pulling list 0c056a5a-7296-411d-a462-2e9a0977d4f4 from server
+[19:12:2023 21:20:50]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pushing list 0c056a5a-7296-411d-a462-2e9a0977d4f4 to server
+[19:12:2023 21:20:50]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pulling list 0c056a5a-7296-411d-a462-2e9a0977d4f4 from server
+[19:12:2023 21:20:50]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pushing list 0c056a5a-7296-411d-a462-2e9a0977d4f4 to server
+[19:12:2023 21:20:50]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pulling list 0c056a5a-7296-411d-a462-2e9a0977d4f4 from server
+[19:12:2023 21:20:50]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pushing list 0c056a5a-7296-411d-a462-2e9a0977d4f4 to server
+[19:12:2023 21:20:50]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pulling list 0c056a5a-7296-411d-a462-2e9a0977d4f4 from server
+[19:12:2023 21:20:50]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pushing list 0c056a5a-7296-411d-a462-2e9a0977d4f4 to server
+[19:12:2023 21:20:50]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pulling list 0c056a5a-7296-411d-a462-2e9a0977d4f4 from server
+[19:12:2023 21:20:50]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pushing list 0c056a5a-7296-411d-a462-2e9a0977d4f4 to server
+[19:12:2023 21:20:50]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pulling list 0c056a5a-7296-411d-a462-2e9a0977d4f4 from server
+[19:12:2023 21:20:50]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pushing list 0c056a5a-7296-411d-a462-2e9a0977d4f4 to server
+[19:12:2023 21:20:50]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pulling list 0c056a5a-7296-411d-a462-2e9a0977d4f4 from server
+[19:12:2023 21:20:50]   Connecting to router at port 5000
+[19:12:2023 21:20:50]   Connected to router at port 5000
+[19:12:2023 21:20:50]   Error pushing list 0c056a5a-7296-411d-a462-2e9a0977d4f4 to server
+[19:12:2023 21:20:53]   Connecting to router at port 5000
+[19:12:2023 21:20:53]   Connected to router at port 5000
+[19:12:2023 21:20:53]   Error pulling list 0c056a5a-7296-411d-a462-2e9a0977d4f4 from server
+[19:12:2023 21:20:53]   Connecting to router at port 5000
+[19:12:2023 21:20:53]   Connected to router at port 5000
+[19:12:2023 21:20:53]   Error pushing list 0c056a5a-7296-411d-a462-2e9a0977d4f4 to server
+[19:12:2023 21:20:58]   Connecting to router at port 5000
+[19:12:2023 21:20:58]   Connected to router at port 5000
+[19:12:2023 21:20:58]   Error pulling list 0c056a5a-7296-411d-a462-2e9a0977d4f4 from server
+[19:12:2023 21:20:58]   Connecting to router at port 5000
+[19:12:2023 21:20:58]   Connected to router at port 5000
+[19:12:2023 21:20:58]   Error pushing list 0c056a5a-7296-411d-a462-2e9a0977d4f4 to server
+[19:12:2023 21:21:03]   Connecting to router at port 5000
+[19:12:2023 21:21:03]   Connected to router at port 5000
+[19:12:2023 21:21:03]   Error pulling list 0c056a5a-7296-411d-a462-2e9a0977d4f4 from server
+[19:12:2023 21:21:03]   Connecting to router at port 5000
+[19:12:2023 21:21:03]   Connected to router at port 5000
+[19:12:2023 21:21:05]   Timeout waiting for router response
+[19:12:2023 21:21:08]   Connecting to router at port 5000
+[19:12:2023 21:21:08]   Connected to router at port 5000
+[19:12:2023 21:21:08]   Error pulling list 0c056a5a-7296-411d-a462-2e9a0977d4f4 from server
+[19:12:2023 21:21:08]   Connecting to router at port 5000
+[19:12:2023 21:21:08]   Connected to router at port 5000
+[19:12:2023 21:21:08]   List 0c056a5a-7296-411d-a462-2e9a0977d4f4 pushed to server
+[19:12:2023 21:21:13]   Connecting to router at port 5000
+[19:12:2023 21:21:13]   Connected to router at port 5000
+[19:12:2023 21:21:13]   List 0c056a5a-7296-411d-a462-2e9a0977d4f4 pulled from server
+[19:12:2023 21:21:13]   List 0c056a5a-7296-411d-a462-2e9a0977d4f4 updated in database
+[19:12:2023 21:21:13]   Connecting to router at port 5000
+[19:12:2023 21:21:13]   Connected to router at port 5000
+[19:12:2023 21:21:13]   List 0c056a5a-7296-411d-a462-2e9a0977d4f4 pushed to server
+[19:12:2023 21:21:18]   Connecting to router at port 5000
+[19:12:2023 21:21:18]   Connected to router at port 5000
+[19:12:2023 21:21:18]   List 0c056a5a-7296-411d-a462-2e9a0977d4f4 pulled from server
+[19:12:2023 21:21:18]   List 0c056a5a-7296-411d-a462-2e9a0977d4f4 updated in database
+[19:12:2023 21:21:18]   Connecting to router at port 5000
+[19:12:2023 21:21:18]   Connected to router at port 5000
+[19:12:2023 21:21:18]   List 0c056a5a-7296-411d-a462-2e9a0977d4f4 pushed to server
+[19:12:2023 21:21:23]   Connecting to router at port 5000
+[19:12:2023 21:24:05]   Connecting to router at port 5000
+[19:12:2023 21:24:05]   Connected to router at port 5000
+[19:12:2023 21:24:05]   List 0c056a5a-7296-411d-a462-2e9a0977d4f4 pulled from server
+[19:12:2023 21:24:05]   List 0c056a5a-7296-411d-a462-2e9a0977d4f4 updated in database
+[19:12:2023 21:24:05]   Connecting to router at port 5000
+[19:12:2023 21:24:05]   Connected to router at port 5000
+[19:12:2023 21:24:05]   List 0c056a5a-7296-411d-a462-2e9a0977d4f4 pushed to server
+[19:12:2023 21:24:10]   Connecting to router at port 5000
+[19:12:2023 21:24:10]   Connected to router at port 5000
+[19:12:2023 21:24:10]   List 0c056a5a-7296-411d-a462-2e9a0977d4f4 pulled from server
+[19:12:2023 21:24:10]   List 0c056a5a-7296-411d-a462-2e9a0977d4f4 updated in database
+[19:12:2023 21:24:10]   Connecting to router at port 5000
+[19:12:2023 21:24:10]   Connected to router at port 5000
+[19:12:2023 21:24:10]   List 0c056a5a-7296-411d-a462-2e9a0977d4f4 pushed to server
+[19:12:2023 21:24:15]   Connecting to router at port 5000
+[19:12:2023 21:24:15]   Connected to router at port 5000
+[19:12:2023 21:24:15]   List 0c056a5a-7296-411d-a462-2e9a0977d4f4 pulled from server
+[19:12:2023 21:24:15]   List 0c056a5a-7296-411d-a462-2e9a0977d4f4 updated in database
+[19:12:2023 21:24:15]   Connecting to router at port 5000
+[19:12:2023 21:24:15]   Connected to router at port 5000
+[19:12:2023 21:24:15]   Error pulling list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 from server
+[19:12:2023 21:24:15]   Connecting to router at port 5000
+[19:12:2023 21:24:15]   Connected to router at port 5000
+[19:12:2023 21:24:15]   List 0c056a5a-7296-411d-a462-2e9a0977d4f4 pushed to server
+[19:12:2023 21:24:15]   Connecting to router at port 5000
+[19:12:2023 21:24:15]   Connected to router at port 5000
+[19:12:2023 21:24:15]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pushed to server
+[19:12:2023 21:24:20]   Connecting to router at port 5000
+[19:12:2023 21:24:20]   Connected to router at port 5000
+[19:12:2023 21:24:20]   List 0c056a5a-7296-411d-a462-2e9a0977d4f4 pulled from server
+[19:12:2023 21:24:20]   List 0c056a5a-7296-411d-a462-2e9a0977d4f4 updated in database
+[19:12:2023 21:24:20]   Connecting to router at port 5000
+[19:12:2023 21:24:20]   Connected to router at port 5000
+[19:12:2023 21:24:20]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pulled from server
+[19:12:2023 21:24:20]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 updated in database
+[19:12:2023 21:24:20]   Connecting to router at port 5000
+[19:12:2023 21:24:20]   Connected to router at port 5000
+[19:12:2023 21:24:20]   List 0c056a5a-7296-411d-a462-2e9a0977d4f4 pushed to server
+[19:12:2023 21:24:20]   Connecting to router at port 5000
+[19:12:2023 21:24:20]   Connected to router at port 5000
+[19:12:2023 21:24:20]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pushed to server
+[19:12:2023 21:24:25]   Connecting to router at port 5000
+[19:12:2023 21:24:25]   Connected to router at port 5000
+[19:12:2023 21:24:25]   List 0c056a5a-7296-411d-a462-2e9a0977d4f4 pulled from server
+[19:12:2023 21:24:25]   List 0c056a5a-7296-411d-a462-2e9a0977d4f4 updated in database
+[19:12:2023 21:24:25]   Connecting to router at port 5000
+[19:12:2023 21:24:25]   Connected to router at port 5000
+[19:12:2023 21:24:25]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pulled from server
+[19:12:2023 21:24:25]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 updated in database
+[19:12:2023 21:24:25]   Connecting to router at port 5000
+[19:12:2023 21:24:25]   Connected to router at port 5000
+[19:12:2023 21:24:25]   List 0c056a5a-7296-411d-a462-2e9a0977d4f4 pushed to server
+[19:12:2023 21:24:25]   Connecting to router at port 5000
+[19:12:2023 21:24:25]   Connected to router at port 5000
+[19:12:2023 21:24:25]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pushed to server
+[19:12:2023 21:24:30]   Connecting to router at port 5000
+[19:12:2023 21:24:30]   Connected to router at port 5000
+[19:12:2023 21:24:30]   List 0c056a5a-7296-411d-a462-2e9a0977d4f4 pulled from server
+[19:12:2023 21:24:30]   List 0c056a5a-7296-411d-a462-2e9a0977d4f4 updated in database
+[19:12:2023 21:24:30]   Connecting to router at port 5000
+[19:12:2023 21:24:30]   Connected to router at port 5000
+[19:12:2023 21:24:30]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pulled from server
+[19:12:2023 21:24:30]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 updated in database
+[19:12:2023 21:24:30]   Connecting to router at port 5000
+[19:12:2023 21:24:30]   Connected to router at port 5000
+[19:12:2023 21:24:30]   List 0c056a5a-7296-411d-a462-2e9a0977d4f4 pushed to server
+[19:12:2023 21:24:30]   Connecting to router at port 5000
+[19:12:2023 21:24:30]   Connected to router at port 5000
+[19:12:2023 21:24:30]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pushed to server
+[19:12:2023 21:26:46]   Connecting to router at port 5000
+[19:12:2023 21:26:46]   Connected to router at port 5000
+[19:12:2023 21:26:46]   Error pulling list 0c056a5a-7296-411d-a462-2e9a0977d4f4 from server
+[19:12:2023 21:26:46]   Connecting to router at port 5000
+[19:12:2023 21:26:46]   Connected to router at port 5000
+[19:12:2023 21:26:46]   Error pulling list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 from server
+[19:12:2023 21:26:46]   Connecting to router at port 5000
+[19:12:2023 21:26:46]   Connected to router at port 5000
+[19:12:2023 21:26:46]   Error pushing list 0c056a5a-7296-411d-a462-2e9a0977d4f4 to server
+[19:12:2023 21:26:46]   Connecting to router at port 5000
+[19:12:2023 21:26:46]   Connected to router at port 5000
+[19:12:2023 21:26:46]   Error pushing list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 to server
+[19:12:2023 21:26:51]   Connecting to router at port 5000
+[19:12:2023 21:26:51]   Connected to router at port 5000
+[19:12:2023 21:26:51]   Error pulling list 0c056a5a-7296-411d-a462-2e9a0977d4f4 from server
+[19:12:2023 21:26:51]   Connecting to router at port 5000
+[19:12:2023 21:26:51]   Connected to router at port 5000
+[19:12:2023 21:26:51]   Error pulling list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 from server
+[19:12:2023 21:26:51]   Connecting to router at port 5000
+[19:12:2023 21:26:51]   Connected to router at port 5000
+[19:12:2023 21:26:51]   Error pushing list 0c056a5a-7296-411d-a462-2e9a0977d4f4 to server
+[19:12:2023 21:26:51]   Connecting to router at port 5000
+[19:12:2023 21:26:51]   Connected to router at port 5000
+[19:12:2023 21:26:51]   Error pushing list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 to server
+[19:12:2023 21:26:56]   Connecting to router at port 5000
+[19:12:2023 21:26:56]   Connected to router at port 5000
+[19:12:2023 21:26:56]   Error pulling list 0c056a5a-7296-411d-a462-2e9a0977d4f4 from server
+[19:12:2023 21:26:56]   Connecting to router at port 5000
+[19:12:2023 21:26:56]   Connected to router at port 5000
+[19:12:2023 21:26:56]   Error pulling list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 from server
+[19:12:2023 21:26:56]   Connecting to router at port 5000
+[19:12:2023 21:26:56]   Connected to router at port 5000
+[19:12:2023 21:26:56]   Error pushing list 0c056a5a-7296-411d-a462-2e9a0977d4f4 to server
+[19:12:2023 21:26:56]   Connecting to router at port 5000
+[19:12:2023 21:26:56]   Connected to router at port 5000
+[19:12:2023 21:26:56]   Error pushing list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 to server
+[19:12:2023 21:27:01]   Connecting to router at port 5000
+[19:12:2023 21:27:01]   Connected to router at port 5000
+[19:12:2023 21:27:01]   Error pulling list 0c056a5a-7296-411d-a462-2e9a0977d4f4 from server
+[19:12:2023 21:27:01]   Connecting to router at port 5000
+[19:12:2023 21:27:01]   Connected to router at port 5000
+[19:12:2023 21:27:01]   Error pulling list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 from server
+[19:12:2023 21:27:01]   Connecting to router at port 5000
+[19:12:2023 21:27:01]   Connected to router at port 5000
+[19:12:2023 21:27:01]   Error pushing list 0c056a5a-7296-411d-a462-2e9a0977d4f4 to server
+[19:12:2023 21:27:01]   Connecting to router at port 5000
+[19:12:2023 21:27:01]   Connected to router at port 5000
+[19:12:2023 21:27:01]   Error pushing list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 to server
+[19:12:2023 21:27:06]   Connecting to router at port 5000
+[19:12:2023 21:27:06]   Connected to router at port 5000
+[19:12:2023 21:27:06]   Error pulling list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 from server
+[19:12:2023 21:27:06]   Connecting to router at port 5000
+[19:12:2023 21:27:06]   Connected to router at port 5000
+[19:12:2023 21:27:06]   Error pushing list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 to server
+[19:12:2023 21:27:48]   Connecting to router at port 5000
+[19:12:2023 21:27:48]   Connected to router at port 5000
+[19:12:2023 21:27:48]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pulled from server
+[19:12:2023 21:27:48]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 updated in database
+[19:12:2023 21:27:48]   Connecting to router at port 5000
+[19:12:2023 21:27:48]   Connected to router at port 5000
+[19:12:2023 21:27:48]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pushed to server
+[19:12:2023 21:27:53]   Connecting to router at port 5000
+[19:12:2023 21:27:53]   Connected to router at port 5000
+[19:12:2023 21:27:53]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pulled from server
+[19:12:2023 21:27:53]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 updated in database
+[19:12:2023 21:27:53]   Connecting to router at port 5000
+[19:12:2023 21:27:53]   Connected to router at port 5000
+[19:12:2023 21:27:53]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pushed to server
+[19:12:2023 21:27:58]   Connecting to router at port 5000
+[19:12:2023 21:27:58]   Connected to router at port 5000
+[19:12:2023 21:27:58]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pulled from server
+[19:12:2023 21:27:58]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 updated in database
+[19:12:2023 21:27:58]   Connecting to router at port 5000
+[19:12:2023 21:27:58]   Connected to router at port 5000
+[19:12:2023 21:27:58]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pushed to server
+[19:12:2023 21:28:03]   Connecting to router at port 5000
+[19:12:2023 21:28:03]   Connected to router at port 5000
+[19:12:2023 21:28:03]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pulled from server
+[19:12:2023 21:28:03]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 updated in database
+[19:12:2023 21:28:03]   Connecting to router at port 5000
+[19:12:2023 21:28:03]   Connected to router at port 5000
+[19:12:2023 21:28:03]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pushed to server
+[19:12:2023 21:28:08]   Connecting to router at port 5000
+[19:12:2023 21:28:08]   Connected to router at port 5000
+[19:12:2023 21:28:08]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pulled from server
+[19:12:2023 21:28:08]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 updated in database
+[19:12:2023 21:28:08]   Connecting to router at port 5000
+[19:12:2023 21:28:08]   Connected to router at port 5000
+[19:12:2023 21:28:08]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pushed to server
+[19:12:2023 21:28:35]   Connecting to router at port 5000
+[19:12:2023 21:28:35]   Connected to router at port 5000
+[19:12:2023 21:28:35]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pulled from server
+[19:12:2023 21:28:35]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 updated in database
+[19:12:2023 21:28:35]   Connecting to router at port 5000
+[19:12:2023 21:28:35]   Connected to router at port 5000
+[19:12:2023 21:28:35]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pushed to server
+[19:12:2023 21:28:40]   Connecting to router at port 5000
+[19:12:2023 21:28:40]   Connected to router at port 5000
+[19:12:2023 21:28:40]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pulled from server
+[19:12:2023 21:28:40]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 updated in database
+[19:12:2023 21:28:40]   Connecting to router at port 5000
+[19:12:2023 21:28:40]   Connected to router at port 5000
+[19:12:2023 21:28:40]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pushed to server
+[19:12:2023 21:28:45]   Connecting to router at port 5000
+[19:12:2023 21:28:45]   Connected to router at port 5000
+[19:12:2023 21:28:45]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pulled from server
+[19:12:2023 21:28:45]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 updated in database
+[19:12:2023 21:28:45]   Connecting to router at port 5000
+[19:12:2023 21:28:45]   Connected to router at port 5000
+[19:12:2023 21:28:45]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pushed to server
+[19:12:2023 21:28:50]   Connecting to router at port 5000
+[19:12:2023 21:28:50]   Connected to router at port 5000
+[19:12:2023 21:28:50]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pulled from server
+[19:12:2023 21:28:50]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 updated in database
+[19:12:2023 21:28:50]   Connecting to router at port 5000
+[19:12:2023 21:28:50]   Connected to router at port 5000
+[19:12:2023 21:28:50]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pushed to server
+[19:12:2023 21:28:55]   Connecting to router at port 5000
+[19:12:2023 21:28:55]   Connected to router at port 5000
+[19:12:2023 21:28:55]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pulled from server
+[19:12:2023 21:28:55]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 updated in database
+[19:12:2023 21:28:55]   Connecting to router at port 5000
+[19:12:2023 21:28:55]   Connected to router at port 5000
+[19:12:2023 21:28:55]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pushed to server
+[19:12:2023 21:29:00]   Connecting to router at port 5000
+[19:12:2023 21:29:00]   Connected to router at port 5000
+[19:12:2023 21:29:00]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pulled from server
+[19:12:2023 21:29:00]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 updated in database
+[19:12:2023 21:29:00]   Connecting to router at port 5000
+[19:12:2023 21:29:00]   Connected to router at port 5000
+[19:12:2023 21:29:00]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pushed to server
+[19:12:2023 21:29:36]   Connecting to router at port 5000
+[19:12:2023 21:29:38]   Timeout connecting to router at port 5000
+[19:12:2023 21:29:38]   Connecting to router at port 5001
+[19:12:2023 21:29:40]   Timeout connecting to router at port 5001
+[19:12:2023 21:29:40]   No router available
+[19:12:2023 21:29:40]   Connecting to router at port 5000
+[19:12:2023 21:29:42]   Timeout connecting to router at port 5000
+[19:12:2023 21:29:42]   Connecting to router at port 5001
+[19:12:2023 21:29:44]   Timeout connecting to router at port 5001
+[19:12:2023 21:29:44]   No router available
+[19:12:2023 21:29:44]   Connecting to router at port 5000
+[19:12:2023 21:29:46]   Timeout connecting to router at port 5000
+[19:12:2023 21:29:46]   Connecting to router at port 5001
+[19:12:2023 21:29:48]   Timeout connecting to router at port 5001
+[19:12:2023 21:29:48]   No router available
+[19:12:2023 21:29:48]   Connecting to router at port 5000
+[19:12:2023 21:29:49]   Connecting to router at port 5000
+[19:12:2023 21:29:50]   Timeout connecting to router at port 5000
+[19:12:2023 21:29:50]   Connecting to router at port 5001
+[19:12:2023 21:29:51]   Timeout connecting to router at port 5000
+[19:12:2023 21:29:51]   Connecting to router at port 5001
+[19:12:2023 21:29:52]   Timeout connecting to router at port 5001
+[19:12:2023 21:29:52]   No router available
+[19:12:2023 21:29:52]   Connecting to router at port 5000
+[19:12:2023 21:29:53]   Timeout connecting to router at port 5001
+[19:12:2023 21:29:53]   No router available
+[19:12:2023 21:29:54]   Timeout connecting to router at port 5000
+[19:12:2023 21:29:54]   Connecting to router at port 5001
+[19:12:2023 21:29:56]   Timeout connecting to router at port 5001
+[19:12:2023 21:29:56]   No router available
+[19:12:2023 21:29:56]   Connecting to router at port 5000
+[19:12:2023 21:29:58]   Timeout connecting to router at port 5000
+[19:12:2023 21:29:58]   Connecting to router at port 5001
+[19:12:2023 21:30:00]   Timeout connecting to router at port 5001
+[19:12:2023 21:30:00]   No router available
+[19:12:2023 21:30:00]   Connecting to router at port 5000
+[19:12:2023 21:30:02]   Timeout connecting to router at port 5000
+[19:12:2023 21:30:02]   Connecting to router at port 5001
+[19:12:2023 21:30:04]   Timeout connecting to router at port 5001
+[19:12:2023 21:30:04]   No router available
+[19:12:2023 21:30:04]   Connecting to router at port 5000
+[19:12:2023 21:30:06]   Timeout connecting to router at port 5000
+[19:12:2023 21:30:06]   Connecting to router at port 5001
+[19:12:2023 21:30:08]   Timeout connecting to router at port 5001
+[19:12:2023 21:30:08]   No router available
+[19:12:2023 21:30:08]   Connecting to router at port 5000
+[19:12:2023 21:30:10]   Timeout connecting to router at port 5000
+[19:12:2023 21:30:10]   Connecting to router at port 5001
+[19:12:2023 21:30:12]   Timeout connecting to router at port 5001
+[19:12:2023 21:30:12]   No router available
+[19:12:2023 21:30:12]   Connecting to router at port 5000
+[19:12:2023 21:30:14]   Timeout connecting to router at port 5000
+[19:12:2023 21:30:14]   Connecting to router at port 5001
+[19:12:2023 21:30:16]   Timeout connecting to router at port 5001
+[19:12:2023 21:30:16]   No router available
+[19:12:2023 21:30:16]   Connecting to router at port 5000
+[19:12:2023 21:30:18]   Timeout connecting to router at port 5000
+[19:12:2023 21:30:18]   Connecting to router at port 5001
+[19:12:2023 21:30:20]   Timeout connecting to router at port 5001
+[19:12:2023 21:30:20]   No router available
+[19:12:2023 21:30:20]   Connecting to router at port 5000
+[19:12:2023 21:30:22]   Timeout connecting to router at port 5000
+[19:12:2023 21:30:22]   Connecting to router at port 5001
+[19:12:2023 21:30:25]   Timeout connecting to router at port 5001
+[19:12:2023 21:30:25]   No router available
+[19:12:2023 21:30:25]   Connecting to router at port 5000
+[19:12:2023 21:30:27]   Timeout connecting to router at port 5000
+[19:12:2023 21:30:27]   Connecting to router at port 5001
+[19:12:2023 21:30:29]   Timeout connecting to router at port 5001
+[19:12:2023 21:30:29]   No router available
+[19:12:2023 21:30:29]   Connecting to router at port 5000
+[19:12:2023 21:30:31]   Timeout connecting to router at port 5000
+[19:12:2023 21:30:31]   Connecting to router at port 5001
+[19:12:2023 21:30:33]   Timeout connecting to router at port 5001
+[19:12:2023 21:30:33]   No router available
+[19:12:2023 21:30:33]   Connecting to router at port 5000
+[19:12:2023 21:30:35]   Timeout connecting to router at port 5000
+[19:12:2023 21:30:35]   Connecting to router at port 5001
+[19:12:2023 21:30:37]   Timeout connecting to router at port 5001
+[19:12:2023 21:30:37]   No router available
+[19:12:2023 21:30:37]   Connecting to router at port 5000
+[19:12:2023 21:30:39]   Timeout connecting to router at port 5000
+[19:12:2023 21:30:39]   Connecting to router at port 5001
+[19:12:2023 21:30:41]   Timeout connecting to router at port 5001
+[19:12:2023 21:30:41]   No router available
+[19:12:2023 21:30:41]   Connecting to router at port 5000
+[19:12:2023 21:30:43]   Timeout connecting to router at port 5000
+[19:12:2023 21:30:43]   Connecting to router at port 5001
+[19:12:2023 21:30:45]   Timeout connecting to router at port 5001
+[19:12:2023 21:30:45]   No router available
+[19:12:2023 21:30:45]   Connecting to router at port 5000
+[19:12:2023 21:30:47]   Timeout connecting to router at port 5000
+[19:12:2023 21:30:47]   Connecting to router at port 5001
+[19:12:2023 21:30:49]   Timeout connecting to router at port 5001
+[19:12:2023 21:30:49]   No router available
+[19:12:2023 21:30:49]   Connecting to router at port 5000
+[19:12:2023 21:30:51]   Timeout connecting to router at port 5000
+[19:12:2023 21:30:51]   Connecting to router at port 5001
+[19:12:2023 21:30:53]   Timeout connecting to router at port 5001
+[19:12:2023 21:30:53]   No router available
+[19:12:2023 21:30:53]   Connecting to router at port 5000
+[19:12:2023 21:30:55]   Timeout connecting to router at port 5000
+[19:12:2023 21:30:55]   Connecting to router at port 5001
+[19:12:2023 21:30:57]   Timeout connecting to router at port 5001
+[19:12:2023 21:30:57]   No router available
+[19:12:2023 21:30:57]   Connecting to router at port 5000
+[19:12:2023 21:30:59]   Timeout connecting to router at port 5000
+[19:12:2023 21:30:59]   Connecting to router at port 5001
+[19:12:2023 21:31:01]   Timeout connecting to router at port 5001
+[19:12:2023 21:31:01]   No router available
+[19:12:2023 21:31:01]   Connecting to router at port 5000
+[19:12:2023 21:31:03]   Timeout connecting to router at port 5000
+[19:12:2023 21:31:03]   Connecting to router at port 5001
+[19:12:2023 21:31:05]   Timeout connecting to router at port 5001
+[19:12:2023 21:31:05]   No router available
+[19:12:2023 21:31:05]   Connecting to router at port 5000
+[19:12:2023 21:31:07]   Timeout connecting to router at port 5000
+[19:12:2023 21:31:07]   Connecting to router at port 5001
+[19:12:2023 21:31:09]   Timeout connecting to router at port 5001
+[19:12:2023 21:31:09]   No router available
+[19:12:2023 21:31:09]   Connecting to router at port 5000
+[19:12:2023 21:31:11]   Timeout connecting to router at port 5000
+[19:12:2023 21:31:11]   Connecting to router at port 5001
+[19:12:2023 21:31:13]   Timeout connecting to router at port 5001
+[19:12:2023 21:31:13]   No router available
+[19:12:2023 21:31:13]   Connecting to router at port 5000
+[19:12:2023 21:31:15]   Timeout connecting to router at port 5000
+[19:12:2023 21:31:15]   Connecting to router at port 5001
+[19:12:2023 21:31:17]   Timeout connecting to router at port 5001
+[19:12:2023 21:31:17]   No router available
+[19:12:2023 21:31:17]   Connecting to router at port 5000
+[19:12:2023 21:31:19]   Timeout connecting to router at port 5000
+[19:12:2023 21:31:19]   Connecting to router at port 5001
+[19:12:2023 21:31:21]   Timeout connecting to router at port 5001
+[19:12:2023 21:31:21]   No router available
+[19:12:2023 21:31:21]   Connecting to router at port 5000
+[19:12:2023 21:31:23]   Timeout connecting to router at port 5000
+[19:12:2023 21:31:23]   Connecting to router at port 5001
+[19:12:2023 21:31:25]   Timeout connecting to router at port 5001
+[19:12:2023 21:31:25]   No router available
+[19:12:2023 21:31:25]   Connecting to router at port 5000
+[19:12:2023 21:31:27]   Timeout connecting to router at port 5000
+[19:12:2023 21:31:27]   Connecting to router at port 5001
+[19:12:2023 21:31:29]   Timeout connecting to router at port 5001
+[19:12:2023 21:31:29]   No router available
+[19:12:2023 21:31:29]   Connecting to router at port 5000
+[19:12:2023 21:31:31]   Timeout connecting to router at port 5000
+[19:12:2023 21:31:31]   Connecting to router at port 5001
+[19:12:2023 21:31:33]   Timeout connecting to router at port 5001
+[19:12:2023 21:31:33]   No router available
+[19:12:2023 21:31:33]   Connecting to router at port 5000
+[19:12:2023 21:31:33]   Connected to router at port 5000
+[19:12:2023 21:31:33]   Error pushing list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 to server
+[19:12:2023 21:31:33]   Connecting to router at port 5000
+[19:12:2023 21:31:33]   Connected to router at port 5000
+[19:12:2023 21:31:33]   Error pulling list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 from server
+[19:12:2023 21:31:33]   Connecting to router at port 5000
+[19:12:2023 21:31:33]   Connected to router at port 5000
+[19:12:2023 21:31:33]   Error pushing list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 to server
+[19:12:2023 21:31:33]   Connecting to router at port 5000
+[19:12:2023 21:31:33]   Connected to router at port 5000
+[19:12:2023 21:31:33]   Error pulling list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 from server
+[19:12:2023 21:31:33]   Connecting to router at port 5000
+[19:12:2023 21:31:33]   Connected to router at port 5000
+[19:12:2023 21:31:33]   Error pushing list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 to server
+[19:12:2023 21:31:33]   Connecting to router at port 5000
+[19:12:2023 21:31:33]   Connected to router at port 5000
+[19:12:2023 21:31:33]   Error pulling list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 from server
+[19:12:2023 21:31:33]   Connecting to router at port 5000
+[19:12:2023 21:31:33]   Connected to router at port 5000
+[19:12:2023 21:31:33]   Error pushing list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 to server
+[19:12:2023 21:31:33]   Connecting to router at port 5000
+[19:12:2023 21:31:33]   Connected to router at port 5000
+[19:12:2023 21:31:33]   Error pulling list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 from server
+[19:12:2023 21:31:33]   Connecting to router at port 5000
+[19:12:2023 21:31:33]   Connected to router at port 5000
+[19:12:2023 21:31:33]   Error pushing list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 to server
+[19:12:2023 21:31:33]   Connecting to router at port 5000
+[19:12:2023 21:31:33]   Connected to router at port 5000
+[19:12:2023 21:31:33]   Error pulling list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 from server
+[19:12:2023 21:31:33]   Connecting to router at port 5000
+[19:12:2023 21:31:33]   Connected to router at port 5000
+[19:12:2023 21:31:33]   Error pushing list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 to server
+[19:12:2023 21:31:33]   Connecting to router at port 5000
+[19:12:2023 21:31:33]   Connected to router at port 5000
+[19:12:2023 21:31:33]   Error pulling list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 from server
+[19:12:2023 21:31:33]   Connecting to router at port 5000
+[19:12:2023 21:31:33]   Connected to router at port 5000
+[19:12:2023 21:31:33]   Error pushing list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 to server
+[19:12:2023 21:31:33]   Connecting to router at port 5000
+[19:12:2023 21:31:33]   Connected to router at port 5000
+[19:12:2023 21:31:33]   Error pulling list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 from server
+[19:12:2023 21:31:33]   Connecting to router at port 5000
+[19:12:2023 21:31:33]   Connected to router at port 5000
+[19:12:2023 21:31:33]   Error pushing list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 to server
+[19:12:2023 21:31:33]   Connecting to router at port 5000
+[19:12:2023 21:31:33]   Connected to router at port 5000
+[19:12:2023 21:31:33]   Error pulling list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 from server
+[19:12:2023 21:31:33]   Connecting to router at port 5000
+[19:12:2023 21:31:33]   Connected to router at port 5000
+[19:12:2023 21:31:33]   Error pushing list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 to server
+[19:12:2023 21:31:33]   Connecting to router at port 5000
+[19:12:2023 21:31:33]   Connected to router at port 5000
+[19:12:2023 21:31:33]   Error pulling list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 from server
+[19:12:2023 21:31:33]   Connecting to router at port 5000
+[19:12:2023 21:31:33]   Connected to router at port 5000
+[19:12:2023 21:31:33]   Error pushing list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 to server
+[19:12:2023 21:31:36]   Connecting to router at port 5000
+[19:12:2023 21:31:36]   Connected to router at port 5000
+[19:12:2023 21:31:36]   Error pulling list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 from server
+[19:12:2023 21:31:36]   Connecting to router at port 5000
+[19:12:2023 21:31:36]   Connected to router at port 5000
+[19:12:2023 21:31:36]   Error pushing list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 to server
+[19:12:2023 21:31:41]   Connecting to router at port 5000
+[19:12:2023 21:31:41]   Connected to router at port 5000
+[19:12:2023 21:31:41]   Error pulling list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 from server
+[19:12:2023 21:31:41]   Connecting to router at port 5000
+[19:12:2023 21:31:41]   Connected to router at port 5000
+[19:12:2023 21:31:41]   Error pushing list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 to server
+[19:12:2023 21:31:46]   Connecting to router at port 5000
+[19:12:2023 21:31:46]   Connected to router at port 5000
+[19:12:2023 21:31:46]   Error pulling list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 from server
+[19:12:2023 21:31:46]   Connecting to router at port 5000
+[19:12:2023 21:31:46]   Connected to router at port 5000
+[19:12:2023 21:31:46]   Error pushing list a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 to server
+[19:12:2023 21:31:51]   Connecting to router at port 5000
+[19:12:2023 21:31:51]   Connected to router at port 5000
+[19:12:2023 21:31:51]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pulled from server
+[19:12:2023 21:31:51]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 updated in database
+[19:12:2023 21:31:51]   Connecting to router at port 5000
+[19:12:2023 21:31:51]   Connected to router at port 5000
+[19:12:2023 21:31:51]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pushed to server
+[19:12:2023 21:31:56]   Connecting to router at port 5000
+[19:12:2023 21:31:56]   Connected to router at port 5000
+[19:12:2023 21:31:56]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pulled from server
+[19:12:2023 21:31:56]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 updated in database
+[19:12:2023 21:31:56]   Connecting to router at port 5000
+[19:12:2023 21:31:56]   Connected to router at port 5000
+[19:12:2023 21:31:56]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pushed to server
+[19:12:2023 21:32:01]   Connecting to router at port 5000
+[19:12:2023 21:32:01]   Connected to router at port 5000
+[19:12:2023 21:32:01]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pulled from server
+[19:12:2023 21:32:01]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 updated in database
+[19:12:2023 21:32:01]   Connecting to router at port 5000
+[19:12:2023 21:32:01]   Connected to router at port 5000
+[19:12:2023 21:32:01]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pushed to server
+[19:12:2023 21:32:06]   Connecting to router at port 5000
+[19:12:2023 21:32:06]   Connected to router at port 5000
+[19:12:2023 21:32:06]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pulled from server
+[19:12:2023 21:32:06]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 updated in database
+[19:12:2023 21:32:06]   Connecting to router at port 5000
+[19:12:2023 21:32:06]   Connected to router at port 5000
+[19:12:2023 21:32:06]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pushed to server
+[19:12:2023 21:32:11]   Connecting to router at port 5000
+[19:12:2023 21:32:11]   Connected to router at port 5000
+[19:12:2023 21:32:11]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pulled from server
+[19:12:2023 21:32:11]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 updated in database
+[19:12:2023 21:32:11]   Connecting to router at port 5000
+[19:12:2023 21:32:11]   Connected to router at port 5000
+[19:12:2023 21:32:11]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pushed to server
+[19:12:2023 21:32:16]   Connecting to router at port 5000
+[19:12:2023 21:32:16]   Connected to router at port 5000
+[19:12:2023 21:32:16]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pulled from server
+[19:12:2023 21:32:16]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 updated in database
+[19:12:2023 21:32:16]   Connecting to router at port 5000
+[19:12:2023 21:32:16]   Connected to router at port 5000
+[19:12:2023 21:32:16]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pushed to server
+[19:12:2023 21:32:21]   Connecting to router at port 5000
+[19:12:2023 21:32:21]   Connected to router at port 5000
+[19:12:2023 21:32:21]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pulled from server
+[19:12:2023 21:32:21]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 updated in database
+[19:12:2023 21:32:21]   Connecting to router at port 5000
+[19:12:2023 21:32:21]   Connected to router at port 5000
+[19:12:2023 21:32:21]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pushed to server
+[19:12:2023 21:32:26]   Connecting to router at port 5000
+[19:12:2023 21:32:26]   Connected to router at port 5000
+[19:12:2023 21:32:26]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pulled from server
+[19:12:2023 21:32:26]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 updated in database
+[19:12:2023 21:32:26]   Connecting to router at port 5000
+[19:12:2023 21:32:26]   Connected to router at port 5000
+[19:12:2023 21:32:26]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pushed to server
+[19:12:2023 21:32:31]   Connecting to router at port 5000
+[19:12:2023 21:32:31]   Connected to router at port 5000
+[19:12:2023 21:32:31]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pulled from server
+[19:12:2023 21:32:31]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 updated in database
+[19:12:2023 21:32:31]   Connecting to router at port 5000
+[19:12:2023 21:32:31]   Connected to router at port 5000
+[19:12:2023 21:32:31]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pushed to server
+[19:12:2023 21:32:36]   Connecting to router at port 5000
+[19:12:2023 21:32:36]   Connected to router at port 5000
+[19:12:2023 21:32:36]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pulled from server
+[19:12:2023 21:32:36]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 updated in database
+[19:12:2023 21:32:36]   Connecting to router at port 5000
+[19:12:2023 21:32:36]   Connected to router at port 5000
+[19:12:2023 21:32:36]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pushed to server
+[19:12:2023 21:32:41]   Connecting to router at port 5000
+[19:12:2023 21:32:41]   Connected to router at port 5000
+[19:12:2023 21:32:41]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pulled from server
+[19:12:2023 21:32:41]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 updated in database
+[19:12:2023 21:32:41]   Connecting to router at port 5000
+[19:12:2023 21:32:41]   Connected to router at port 5000
+[19:12:2023 21:32:41]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pushed to server
+[19:12:2023 21:32:46]   Connecting to router at port 5000
+[19:12:2023 21:32:46]   Connected to router at port 5000
+[19:12:2023 21:32:46]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pulled from server
+[19:12:2023 21:32:46]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 updated in database
+[19:12:2023 21:32:46]   Connecting to router at port 5000
+[19:12:2023 21:32:46]   Connected to router at port 5000
+[19:12:2023 21:32:46]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pushed to server
+[19:12:2023 21:32:51]   Connecting to router at port 5000
+[19:12:2023 21:32:51]   Connected to router at port 5000
+[19:12:2023 21:32:51]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pulled from server
+[19:12:2023 21:32:51]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 updated in database
+[19:12:2023 21:32:51]   Connecting to router at port 5000
+[19:12:2023 21:32:51]   Connected to router at port 5000
+[19:12:2023 21:32:51]   List a285866b-a3e3-4fbd-bed9-ff0408bb4eb7 pushed to server
+[19:12:2023 21:32:56]   Connecting to router at port 5000
