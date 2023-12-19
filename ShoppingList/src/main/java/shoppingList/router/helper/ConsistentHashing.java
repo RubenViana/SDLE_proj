@@ -12,7 +12,7 @@ public class ConsistentHashing {
     private final SortedMap<String, Integer> hashRing = new TreeMap<>(); // Hash ring
     private final MessageDigest hashFunction;
 
-    public ConsistentHashing(int numberOfReplicas) {
+    public ConsistentHashing(int numberOfServers, int numberOfReplicas) {
 
         try {
             this.hashFunction = MessageDigest.getInstance("SHA-256");
@@ -21,6 +21,10 @@ public class ConsistentHashing {
         }
 
         this.numberOfReplicas = numberOfReplicas;
+
+        for (int i = 0; i < numberOfServers; i++) {
+            addServer(i);
+        }
 
     }
 

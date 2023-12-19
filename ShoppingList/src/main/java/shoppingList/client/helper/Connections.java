@@ -18,12 +18,11 @@ import shoppingList.client.helper.CRDT;
 import shoppingList.client.helper.Item;
 
 public class Connections {
-    public static final Integer PULLING_RATE = 30; //seconds
-
+    public static final Integer PULLING_RATE = 5; //seconds
     private static final int TIMEOUT = 2000; //timeout for receiving a response from the router
     private static final ZContext context = new ZContext();
     private static final SimpleDateFormat TIMESTAMP_FORMAT = new SimpleDateFormat("dd:MM:yyyy HH:mm:ss");
-    private static final List<Integer> routersPorts = List.of(5000); //ONLY ONE ROUTER FOR NOW
+    private static final List<Integer> routersPorts = List.of(5000, 5001); //ONLY ONE ROUTER FOR NOW
     public static boolean doesListExistDB(String databaseURL, String listID) {
         try {
             Connection connection = DriverManager.getConnection(databaseURL);

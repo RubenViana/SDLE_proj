@@ -36,7 +36,7 @@ public class ConnectRouterState implements ServerState {
                     return new OnlineState(this.serverID, this.databaseURL, socket);
                 } else {
                     Connections.logEvent("Failed to connect to router", "{Router: " + port + "}");
-                    return null;
+                    socket.close();
                 }
             }
         }

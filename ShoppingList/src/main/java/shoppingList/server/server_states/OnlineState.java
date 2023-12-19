@@ -4,13 +4,18 @@ import com.google.gson.Gson;
 import org.zeromq.SocketType;
 import org.zeromq.ZContext;
 import org.zeromq.ZMQ;
+import shoppingList.client.client_states.ClientState;
+import shoppingList.server.Server;
 import shoppingList.server.helper.Connections;
 import shoppingList.server.helper.Frame;
+
+import java.util.concurrent.*;
 
 public class OnlineState implements ServerState {
     private final int serverID;
     private final String databaseURL;
     private final ZMQ.Socket routerSocket;
+    private long lastRouterRequestTime;
 
     public OnlineState(int serverID, String databaseURL, ZMQ.Socket routerSocket) {
         this.serverID = serverID;
@@ -26,10 +31,23 @@ public class OnlineState implements ServerState {
             int serverPort = Connections.SERVER_PORT + this.serverID;
             server.bind("tcp://*:" + serverPort);
 
+            // Create a ScheduledExecutorService with a single thread
+            ScheduledExecutorService scheduler = Executors.newSingleThreadScheduledExecutor();
+
+            // not very elegant, but it works
+            scheduler.scheduleAtFixedRate(() -> {if (System.currentTimeMillis() - lastRouterRequestTime > 10000) {
+                Connections.logEvent("Timeout from Router", "{Router: }");
+                scheduler.shutdown();
+                ServerState newState = new ConnectRouterState(serverID, databaseURL);
+                newState.run();
+            }}, 10, 30, TimeUnit.SECONDS);
+
+
 
             while (!Thread.currentThread().isInterrupted()) {
                 Frame request = new Gson().fromJson(server.recvStr(), Frame.class);
                 Frame response;
+                lastRouterRequestTime = System.currentTimeMillis();
 
                 switch (request.getAction()) {
                     case SERVER_STATUS:
@@ -51,8 +69,8 @@ public class OnlineState implements ServerState {
                         break;
                 }
             }
-            return null;
         }
+        return null;
     }
 
     private Frame handlePushListRequest(Frame request) {

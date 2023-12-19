@@ -27,12 +27,13 @@ public class InitState implements ClientState {
             System.out.println("Connected to database");
 
             // Create a ScheduledExecutorService with a single thread
-            ScheduledExecutorService schedulerPull = Executors.newSingleThreadScheduledExecutor();
-            ScheduledExecutorService schedulerPush = Executors.newSingleThreadScheduledExecutor();
+            ScheduledExecutorService schedulerPullPush = Executors.newSingleThreadScheduledExecutor();
 
             // Pull local lists from the server every 10 seconds
-            schedulerPull.scheduleAtFixedRate(() -> Connections.updateLocalListsFromServer(this.databaseURL, this.userID), 0, Connections.PULLING_RATE, TimeUnit.SECONDS);
-            schedulerPush.scheduleAtFixedRate(() -> Connections.updateServerListsFromLocal(this.databaseURL, this.userID), 0, Connections.PULLING_RATE, TimeUnit.SECONDS);
+            schedulerPullPush.scheduleAtFixedRate(() -> {
+                Connections.updateLocalListsFromServer(this.databaseURL, this.userID);
+                Connections.updateServerListsFromLocal(this.databaseURL, this.userID);
+            }, 0, Connections.PULLING_RATE, TimeUnit.SECONDS);
 
             return new MainMenuState(this.databaseURL, this.userID);
         }

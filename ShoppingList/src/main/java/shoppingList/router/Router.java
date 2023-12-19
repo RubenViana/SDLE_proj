@@ -21,7 +21,7 @@ public class Router {
     private Map<Integer, Long> lastStatusTimeServersMap = new HashMap<>();
     private final ReadWriteLock serversLock = new ReentrantReadWriteLock();
     private final long STATUS_TIMEOUT = 10000;
-    private ConsistentHashing hashRing = new ConsistentHashing(3);
+    private ConsistentHashing hashRing = new ConsistentHashing(3, 3);
     public Router(int port) {
         this.port = port;
     }
@@ -69,8 +69,11 @@ public class Router {
                             Connections.sendFrameFrontend(frontend, address, new Frame(Frame.FrameStatus.ROUTER_OK, Frame.FrameAction.ROUTER_STATUS, "", ""));
                             Connections.logEvent( "Reply to " + address, request.toString());
                             break;
-                        case PULL_LIST, PUSH_LIST:
-                            handlePullPushListRequest(frontend, address, request);
+                        case PULL_LIST:
+                            handlePullListRequest(frontend, address, request);
+                            break;
+                        case PUSH_LIST:
+                            handlePushListRequest(frontend, address, request);
                             break;
                         default:
                             System.out.println("Invalid action");
@@ -87,8 +90,8 @@ public class Router {
                 if (!Connections.checkServerStatus(entry.getKey(), servers.get(entry.getKey()) + "")) {
                     serversLock.writeLock().lock();
                     servers.remove(entry.getKey());
-                    hashRing.removeServer(entry.getKey());
-                    Connections.logEvent("Server_" + entry.getKey() + " removed from the ring", "{Server: " + servers.get(entry.getKey()) + "}");
+                    //hashRing.removeServer(entry.getKey());
+                    //Connections.logEvent("Server_" + entry.getKey() + " removed from the ring", "{Server: " + servers.get(entry.getKey()) + "}");
                     serversLock.writeLock().unlock();
                     Connections.logEvent( "Server_" + entry.getKey() + " Offline", "{Server: " + servers.get(entry.getKey()) + "}");
                 }
@@ -98,49 +101,105 @@ public class Router {
         }
     }
 
-    private void handlePullPushListRequest(ZMQ.Socket router, String client, Frame request) {
+    private void handlePullListRequest(ZMQ.Socket router, String client, Frame request) {
 
         Integer server = hashRing.getServer(request.getListID());
 
-        if (server == null) {
+        if (servers.isEmpty() || server == null) {
             Connections.logEvent( "No server available", request.toString());
             Connections.sendFrameFrontend(router, client, new Frame(Frame.FrameStatus.SERVER_ERROR, request.getAction(), request.getListID(), request.getListItem()));
             return;
         }
 
-        //TODO handle replication of requests to other servers
+        //Replicate request to server and next server in the ring
+        List<Integer> serversList = new ArrayList<>();
+        serversList.add(servers.get(server));
+        serversList.add(servers.get((server + 1) % servers.size()));
 
-        try (ZContext context = new ZContext()) {
-            ZMQ.Socket socket = context.createSocket(SocketType.REQ);
-            socket.connect("tcp://localhost:" + servers.get(server));
+        for (Integer s : serversList) {
+            if (s == null) continue;
+            try (ZContext context = new ZContext()) {
+                ZMQ.Socket socket = context.createSocket(SocketType.REQ);
+                socket.connect("tcp://localhost:" + s);
 
-            socket.setReceiveTimeOut(1000);
+                socket.setReceiveTimeOut(1000);
 
-            Connections.logEvent( "Request from " + client + " to Server_" + server, request.toString());
+                Connections.logEvent("Request from " + client + " to Server_" + s, request.toString());
 
-            socket.send(new Gson().toJson(request));
+                socket.send(new Gson().toJson(request));
 
-            Frame response = new Gson().fromJson(socket.recvStr(), Frame.class);
+                Frame response = new Gson().fromJson(socket.recvStr(), Frame.class);
 
-            if (response == null) {
-                Connections.logEvent( "No response from Server_" + server, request.toString());
-                Connections.sendFrameFrontend(router, client, new Frame(Frame.FrameStatus.SERVER_ERROR, request.getAction(), request.getListID(), request.getListItem()));
-                socket.close();
-                return;
+                if (response == null) {
+                    Connections.logEvent("No response from Server_" + s, request.toString());
+                    socket.close();
+                }
+                else {
+                    Connections.logEvent("Response from Server_" + s + " to " + client, response.toString());
+                    lastStatusTimeServersMap.put(s, System.currentTimeMillis());// Update last status time
+                    Connections.sendFrameFrontend(router, client, response);
+                    socket.close();
+                    return;
+                }
             }
-
-            Connections.logEvent( "Response from Server_" + server + " to " + client, response.toString());
-            lastStatusTimeServersMap.put(server, System.currentTimeMillis());// Update last status time
-            Connections.sendFrameFrontend(router, client, response);
-            socket.close();
-
         }
+        Connections.sendFrameFrontend(router, client, new Frame(Frame.FrameStatus.SERVER_ERROR, request.getAction(), request.getListID(), request.getListItem()));
+    }
+
+    private void handlePushListRequest(ZMQ.Socket router, String client, Frame request) {
+
+        Integer server = hashRing.getServer(request.getListID());
+
+        if (servers.isEmpty() || server == null) {
+            Connections.logEvent( "No server available", request.toString());
+            Connections.sendFrameFrontend(router, client, new Frame(Frame.FrameStatus.SERVER_ERROR, request.getAction(), request.getListID(), request.getListItem()));
+            return;
+        }
+
+        //Replicate request to server and next server in the ring
+        List<Integer> serversList = new ArrayList<>();
+        serversList.add(servers.get(server));
+        serversList.add(servers.get((server + 1) % 3));
+
+        int numberMissingServers = 0;
+        for (Integer s : serversList) {
+            if (s == null) continue;
+            try (ZContext context = new ZContext()) {
+                ZMQ.Socket socket = context.createSocket(SocketType.REQ);
+                socket.connect("tcp://localhost:" + s);
+
+                socket.setReceiveTimeOut(1000);
+
+                Connections.logEvent("Request from " + client + " to Server_" + s, request.toString());
+
+                socket.send(new Gson().toJson(request));
+
+                Frame response = new Gson().fromJson(socket.recvStr(), Frame.class);
+
+                if (response == null) {
+                    Connections.logEvent("No response from Server_" + s, request.toString());
+                    socket.close();
+                    numberMissingServers++;
+                }
+                else {
+                    Connections.logEvent("Response from Server_" + s + " to " + client, response.toString());
+                    lastStatusTimeServersMap.put(s, System.currentTimeMillis());// Update last status time
+                    Connections.sendFrameFrontend(router, client, response);
+                    socket.close();
+                }
+
+            }
+        }
+        if (numberMissingServers == serversList.size())
+            Connections.sendFrameFrontend(router, client, new Frame(Frame.FrameStatus.SERVER_ERROR, request.getAction(), request.getListID(), request.getListItem()));
+        else
+            Connections.sendFrameFrontend(router, client, request);
     }
 
     private void handleServerStatus (ZMQ.Socket router, String server, Frame request) {
         //Check if server is already in the servers list
         if (servers.containsValue(Integer.parseInt(request.getListID()))) {
-            Connections.logEvent("Server_" + server + " already in the ring", "{Server: " + request.getListID() + "}");
+            //Connections.logEvent("Server_" + server + " already in the ring", "{Server: " + request.getListID() + "}");
             Connections.sendFrameFrontend(router, server, new Frame(Frame.FrameStatus.ROUTER_OK, Frame.FrameAction.SERVER_STATUS, "", ""));
             return;
         }
@@ -148,8 +207,8 @@ public class Router {
             serversLock.writeLock().lock();
             servers.put(Integer.parseInt(server), Integer.parseInt(request.getListID()));
             lastStatusTimeServersMap.put(Integer.parseInt(server), System.currentTimeMillis());
-            hashRing.addServer(Integer.parseInt(server));
-            Connections.logEvent("Server_" + server + " added to the ring", "{Server: " + servers.get(Integer.parseInt(server)) + "}");
+            //hashRing.addServer(Integer.parseInt(server));
+            //Connections.logEvent("Server_" + server + " added to the ring", "{Server: " + servers.get(Integer.parseInt(server)) + "}");
             serversLock.writeLock().unlock();
         }
 

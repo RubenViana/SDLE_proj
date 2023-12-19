@@ -14,7 +14,7 @@ import java.util.Objects;
 
 public class Connections {
     private static final SimpleDateFormat TIMESTAMP_FORMAT = new SimpleDateFormat("HH:mm:ss");
-    public static final List<Integer> routersPorts = List.of(5000); //ONLY ONE ROUTER FOR NOW
+    public static final List<Integer> routersPorts = List.of(5000, 5001); //ONLY ONE ROUTER FOR NOW
 
     public static final Integer SERVER_PORT = 7000;
 
