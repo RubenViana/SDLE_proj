@@ -2,12 +2,14 @@ package shoppingList.server.helper;
 
 import com.google.gson.Gson;
 import org.zeromq.ZMQ;
+import shoppingList.server.helper.CRDT;
 import shoppingList.server.helper.Frame;
 
 import java.sql.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.Objects;
 
 
 public class Connections {
@@ -37,12 +39,14 @@ public class Connections {
         return false;
     }
 
-    public static boolean addListDB(String databaseURL, String listID) {
+    public static boolean addListDB(String databaseURL, String listID, String item) {
+        if (Objects.equals(item, "")) item = "[]";
         try {
             Connection connection = DriverManager.getConnection(databaseURL);
-            String query = "INSERT INTO lists (list_id) VALUES (?)";
+            String query = "INSERT INTO lists (list_id, item) VALUES (?, ?)";
             try (PreparedStatement stmt = connection.prepareStatement(query)) {
                 stmt.setString(1, listID);
+                stmt.setString(2, item);
                 stmt.executeUpdate();
             }
             return true;
@@ -67,9 +71,29 @@ public class Connections {
         return false;
     }
 
-    public static String getItemsDB(String databaseURL, String listID) {
+    public static boolean updateListDB(String databaseURL, String listID, String item) {
+        if (Objects.equals(item, "")) item = "[]";
+        String oldItems = getItemsDB(databaseURL, listID);
+        CRDT crdt = new CRDT(oldItems);
+        crdt.merge(item);
 
-        //This is not complete until CRDT is implemented
+        try {
+            Connection connection = DriverManager.getConnection(databaseURL);
+            String query = "UPDATE lists SET item = ? WHERE list_id = ?";
+            try (PreparedStatement stmt = connection.prepareStatement(query)) {
+                stmt.setString(1, crdt.getItemsList());
+                stmt.setString(2, listID);
+                stmt.executeUpdate();
+            }
+
+            return true;
+        } catch (SQLException e) {
+            System.err.println("Error connecting to the database: " + e.getMessage());
+        }
+        return false;
+    }
+
+    public static String getItemsDB(String databaseURL, String listID) {
         try {
             Connection connection = DriverManager.getConnection(databaseURL);
             String query = "SELECT * FROM lists WHERE list_id = ?";
@@ -80,29 +104,13 @@ public class Connections {
                     while (rs.next()) {
                         sb.append(rs.getString("item"));
                     }
-                    return sb.toString();
+                    return new CRDT(sb.toString()).getItemsList();
                 }
             }
         } catch (SQLException e) {
             System.err.println("Error connecting to the database: " + e.getMessage());
         }
         return null;
-    }
-
-    public static boolean updateListDB(String databaseURL, String listID, String item) {
-        try {
-            Connection connection = DriverManager.getConnection(databaseURL);
-            String query = "UPDATE lists SET item = ? WHERE list_id = ?";
-            try (PreparedStatement stmt = connection.prepareStatement(query)) {
-                stmt.setString(1, item);
-                stmt.setString(2, listID);
-                stmt.executeUpdate();
-            }
-            return true;
-        } catch (SQLException e) {
-            System.err.println("Error connecting to the database: " + e.getMessage());
-        }
-        return false;
     }
 
 }

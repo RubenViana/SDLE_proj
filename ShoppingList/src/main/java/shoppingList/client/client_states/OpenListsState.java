@@ -1,6 +1,8 @@
 package shoppingList.client.client_states;
 
+import shoppingList.client.helper.CRDT;
 import shoppingList.client.helper.Connections;
+import shoppingList.client.helper.Item;
 import shoppingList.client.helper.Utils;
 
 import java.util.Scanner;
@@ -72,8 +74,10 @@ public class OpenListsState implements ClientState {
     }
 
     private void printItems() {
-        //TODO: print items
-        System.out.println("- " + this.items);
+        CRDT crdt = new CRDT(this.items);
+        for (Item item : crdt.getItems()) {
+            System.out.println("- " + item.name + ": " + item.quantity);
+        }
         System.out.println();
     }
 }

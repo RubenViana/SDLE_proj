@@ -58,7 +58,7 @@ public class OnlineState implements ServerState {
     private Frame handlePushListRequest(Frame request) {
         Frame response;
         if (!Connections.doesListExistDB(this.databaseURL, request.getListID())) {
-            if(Connections.addListDB(this.databaseURL, request.getListID()))
+            if(Connections.addListDB(this.databaseURL, request.getListID(), request.getListItem()))
                 Connections.logEvent("List Added", "{List: " + request.getListID() + "}");
         }
 

@@ -14,11 +14,13 @@ import com.google.gson.Gson;
 import org.zeromq.SocketType;
 import org.zeromq.ZMQ;
 import org.zeromq.ZContext;
+import shoppingList.client.helper.CRDT;
+import shoppingList.client.helper.Item;
 
 public class Connections {
     public static final Integer PULLING_RATE = 30; //seconds
 
-    private static final int TIMEOUT = 5000; //timeout for receiving a response from the router
+    private static final int TIMEOUT = 2000; //timeout for receiving a response from the router
     private static final ZContext context = new ZContext();
     private static final SimpleDateFormat TIMESTAMP_FORMAT = new SimpleDateFormat("dd:MM:yyyy HH:mm:ss");
     private static final List<Integer> routersPorts = List.of(5000); //ONLY ONE ROUTER FOR NOW
@@ -41,9 +43,10 @@ public class Connections {
     public static boolean addListDB(String databaseURL, String listID) {
         try {
             Connection connection = DriverManager.getConnection(databaseURL);
-            String query = "INSERT INTO lists (list_id) VALUES (?)";
+            String query = "INSERT INTO lists (list_id, item) VALUES (?, ?)";
             try (PreparedStatement stmt = connection.prepareStatement(query)) {
                 stmt.setString(1, listID);
+                stmt.setString(2, "[]");
                 stmt.executeUpdate();
             }
             return true;
@@ -69,11 +72,16 @@ public class Connections {
     }
 
     public static boolean updateListDB(String databaseURL, String userID, String listID, String item) {
+
+        String oldItems = getItemsDB(databaseURL, listID);
+        CRDT crdt = new CRDT(oldItems);
+        crdt.merge(item);
+
         try {
             Connection connection = DriverManager.getConnection(databaseURL);
             String query = "UPDATE lists SET item = ? WHERE list_id = ?";
             try (PreparedStatement stmt = connection.prepareStatement(query)) {
-                stmt.setString(1, item);
+                stmt.setString(1, crdt.getItemsList());
                 stmt.setString(2, listID);
                 stmt.executeUpdate();
             }
@@ -86,46 +94,44 @@ public class Connections {
     }
 
     public static boolean doesItemExistDB(String databaseURL, String listID, String item) {
-        try {
-            Connection connection = DriverManager.getConnection(databaseURL);
-            String query = "SELECT * FROM lists WHERE list_id = ? AND item = ?";
-            try (PreparedStatement stmt = connection.prepareStatement(query)) {
-                stmt.setString(1, listID);
-                stmt.setString(2, item);
-                try (ResultSet rs = stmt.executeQuery()) {
-                    return rs.next();
-                }
-            }
-        } catch (SQLException e) {
-            System.err.println("Error connecting to the database: " + e.getMessage());
-        }
-        return false;
+        String items = getItemsDB(databaseURL, listID);
+        CRDT crdt = new CRDT(items);
+        return crdt.getItem(item) != null;
     }
 
-    public static boolean addItemDB(String databaseURL, String userID, String listID, String item) {
-        // TODO: add item to the item list and them update the list in the database
+    public static boolean addItemDB(String databaseURL, String userID, String listID, String item, int quantity) {
+        String items = getItemsDB(databaseURL, listID);
+        CRDT crdt = new CRDT(items);
 
-        //Stub for now
-        return updateListDB(databaseURL, userID, listID, item);
+        crdt.addOrUpdateItem(new Item(item, quantity, System.currentTimeMillis()));
+        String updatedItems = crdt.getItemsList();
+
+        return updateListDB(databaseURL, userID, listID, updatedItems);
     }
 
     public static boolean removeItemDB(String databaseURL, String userID, String listID, String item) {
 
-        // TODO: remove item from the item list and them update the list in the database
+        String items = getItemsDB(databaseURL, listID);
+        CRDT crdt = new CRDT(items);
 
-        //Stub for now
-        return updateListDB(databaseURL, userID, listID, null);
+        crdt.removeItem(new Item(item, 0, System.currentTimeMillis()));
+        String updatedItems = crdt.getItemsList();
+
+        return updateListDB(databaseURL, userID, listID, updatedItems);
     }
 
-    public static boolean updateItemDB(String databaseURL, String userID, String listID, String item) {
-        // TODO: update item from the item list and them update the list in the database
+    public static boolean updateItemDB(String databaseURL, String userID, String listID, String item, int quantity) {
 
-        return updateListDB(databaseURL, userID, listID, item);
+        String items = getItemsDB(databaseURL, listID);
+        CRDT crdt = new CRDT(items);
+
+        crdt.addOrUpdateItem(new Item(item, quantity, System.currentTimeMillis()));
+        String updatedItems = crdt.getItemsList();
+
+        return updateListDB(databaseURL, userID, listID, updatedItems);
     }
 
     public static String getItemsDB(String databaseURL, String listID) {
-
-        //This is not complete until CRDT is implemented
         try {
             Connection connection = DriverManager.getConnection(databaseURL);
             String query = "SELECT * FROM lists WHERE list_id = ?";
@@ -136,7 +142,7 @@ public class Connections {
                     while (rs.next()) {
                         sb.append(rs.getString("item"));
                     }
-                    return sb.toString();
+                    return new CRDT(sb.toString()).getItemsList();
                 }
             }
         } catch (SQLException e) {

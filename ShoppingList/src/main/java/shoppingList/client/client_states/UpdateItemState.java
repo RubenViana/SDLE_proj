@@ -31,7 +31,7 @@ public class UpdateItemState implements ClientState {
             return new OpenListsState(this.databaseURL, this.userID, this.listID);
         }
 
-        if (!Connections.updateItemDB(this.databaseURL, this.userID, this.listID, itemName)) { //missing itemQuantity
+        if (!Connections.updateItemDB(this.databaseURL, this.userID, this.listID, itemName, Integer.parseInt(itemQuantity))) { //missing itemQuantity
             System.out.println("Failed to update item");
         }
 

@@ -1,315 +1,67 @@
-[19:12:2023 10:53:20]   Connecting to router at port 5000
-[19:12:2023 10:53:20]   Connecting to router at port 5000
-[19:12:2023 10:53:20]   Connected to router at port 5000
-[19:12:2023 10:53:20]   Connected to router at port 5000
-[19:12:2023 10:53:20]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 pulled from server
-[19:12:2023 10:53:20]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 updated in database
-[19:12:2023 10:53:20]   Connecting to router at port 5000
-[19:12:2023 10:53:20]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 pushed to server
-[19:12:2023 10:53:20]   Connecting to router at port 5000
-[19:12:2023 10:53:20]   Connected to router at port 5000
-[19:12:2023 10:53:20]   List d099dbca-8400-404d-bc6b-d36c07acaa33 pulled from server
-[19:12:2023 10:53:20]   List d099dbca-8400-404d-bc6b-d36c07acaa33 updated in database
-[19:12:2023 10:53:20]   Connected to router at port 5000
-[19:12:2023 10:53:20]   List d099dbca-8400-404d-bc6b-d36c07acaa33 pushed to server
-[19:12:2023 10:53:49]   Connecting to router at port 5000
-[19:12:2023 10:53:50]   Connected to router at port 5000
-[19:12:2023 10:53:50]   Connecting to router at port 5000
-[19:12:2023 10:53:50]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 pulled from server
-[19:12:2023 10:53:50]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 updated in database
-[19:12:2023 10:53:50]   Connected to router at port 5000
-[19:12:2023 10:53:50]   Connecting to router at port 5000
-[19:12:2023 10:53:50]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 pushed to server
-[19:12:2023 10:53:50]   Connecting to router at port 5000
-[19:12:2023 10:53:50]   Connected to router at port 5000
-[19:12:2023 10:53:50]   List d099dbca-8400-404d-bc6b-d36c07acaa33 pulled from server
-[19:12:2023 10:53:50]   List d099dbca-8400-404d-bc6b-d36c07acaa33 updated in database
-[19:12:2023 10:53:50]   Connected to router at port 5000
-[19:12:2023 10:53:50]   List d099dbca-8400-404d-bc6b-d36c07acaa33 pushed to server
-[19:12:2023 10:54:20]   Connecting to router at port 5000
-[19:12:2023 10:54:20]   Connected to router at port 5000
-[19:12:2023 10:54:20]   Connecting to router at port 5000
-[19:12:2023 10:54:20]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 pushed to server
-[19:12:2023 10:54:20]   Connecting to router at port 5000
-[19:12:2023 10:54:20]   Connected to router at port 5000
-[19:12:2023 10:54:20]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 pulled from server
-[19:12:2023 10:54:20]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 updated in database
-[19:12:2023 10:54:20]   Connected to router at port 5000
-[19:12:2023 10:54:20]   Connecting to router at port 5000
-[19:12:2023 10:54:20]   List d099dbca-8400-404d-bc6b-d36c07acaa33 pushed to server
-[19:12:2023 10:54:20]   Connected to router at port 5000
-[19:12:2023 10:54:20]   List d099dbca-8400-404d-bc6b-d36c07acaa33 pulled from server
-[19:12:2023 10:54:20]   List d099dbca-8400-404d-bc6b-d36c07acaa33 updated in database
-[19:12:2023 10:54:50]   Connecting to router at port 5000
-[19:12:2023 10:54:50]   Connecting to router at port 5000
-[19:12:2023 10:54:50]   Connected to router at port 5000
-[19:12:2023 10:54:50]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 pushed to server
-[19:12:2023 10:54:50]   Connecting to router at port 5000
-[19:12:2023 10:54:50]   Connected to router at port 5000
-[19:12:2023 10:54:50]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 pulled from server
-[19:12:2023 10:54:50]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 updated in database
-[19:12:2023 10:54:50]   Connected to router at port 5000
-[19:12:2023 10:54:50]   Connecting to router at port 5000
-[19:12:2023 10:54:50]   List d099dbca-8400-404d-bc6b-d36c07acaa33 pushed to server
-[19:12:2023 10:54:50]   Connected to router at port 5000
-[19:12:2023 10:54:50]   List d099dbca-8400-404d-bc6b-d36c07acaa33 pulled from server
-[19:12:2023 10:54:50]   List d099dbca-8400-404d-bc6b-d36c07acaa33 updated in database
-[19:12:2023 10:55:20]   Connecting to router at port 5000
-[19:12:2023 10:55:20]   Connected to router at port 5000
-[19:12:2023 10:55:20]   Connecting to router at port 5000
-[19:12:2023 10:55:20]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 pushed to server
-[19:12:2023 10:55:20]   Connecting to router at port 5000
-[19:12:2023 10:55:20]   Connected to router at port 5000
-[19:12:2023 10:55:20]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 pulled from server
-[19:12:2023 10:55:20]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 updated in database
-[19:12:2023 10:55:20]   Connected to router at port 5000
-[19:12:2023 10:55:20]   Connecting to router at port 5000
-[19:12:2023 10:55:20]   List d099dbca-8400-404d-bc6b-d36c07acaa33 pushed to server
-[19:12:2023 10:55:20]   Connecting to router at port 5000
-[19:12:2023 10:55:20]   Connected to router at port 5000
-[19:12:2023 10:55:20]   List d099dbca-8400-404d-bc6b-d36c07acaa33 pulled from server
-[19:12:2023 10:55:20]   List d099dbca-8400-404d-bc6b-d36c07acaa33 updated in database
-[19:12:2023 10:55:20]   Connected to router at port 5000
-[19:12:2023 10:55:20]   Connecting to router at port 5000
-[19:12:2023 10:55:20]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c pushed to server
-[19:12:2023 10:55:20]   Connected to router at port 5000
-[19:12:2023 10:55:20]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c pulled from server
-[19:12:2023 10:55:20]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c updated in database
-[19:12:2023 10:56:01]   Connecting to router at port 5000
-[19:12:2023 10:56:01]   Connecting to router at port 5000
-[19:12:2023 10:56:01]   Connected to router at port 5000
-[19:12:2023 10:56:01]   Connected to router at port 5000
-[19:12:2023 10:56:01]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 pulled from server
-[19:12:2023 10:56:01]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 updated in database
-[19:12:2023 10:56:01]   Connecting to router at port 5000
-[19:12:2023 10:56:01]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 pushed to server
-[19:12:2023 10:56:01]   Connecting to router at port 5000
-[19:12:2023 10:56:01]   Connected to router at port 5000
-[19:12:2023 10:56:03]   Error pulling list d099dbca-8400-404d-bc6b-d36c07acaa33 from server
-[19:12:2023 10:56:03]   Connecting to router at port 5000
-[19:12:2023 10:56:03]   Connected to router at port 5000
-[19:12:2023 10:56:04]   Error pushing list d099dbca-8400-404d-bc6b-d36c07acaa33 to server
-[19:12:2023 10:56:04]   Connecting to router at port 5000
-[19:12:2023 10:56:04]   Connected to router at port 5000
-[19:12:2023 10:56:04]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c pulled from server
-[19:12:2023 10:56:04]   Connected to router at port 5000
-[19:12:2023 10:56:04]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c updated in database
-[19:12:2023 10:56:04]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c pushed to server
-[19:12:2023 11:30:55]   Connecting to router at port 5000
-[19:12:2023 11:30:55]   Connecting to router at port 5000
-[19:12:2023 11:31:00]   Timeout connecting to router at port 5000
-[19:12:2023 11:31:00]   No router available
-[19:12:2023 11:31:00]   Connecting to router at port 5000
-[19:12:2023 11:31:05]   Timeout connecting to router at port 5000
-[19:12:2023 11:31:05]   No router available
-[19:12:2023 11:31:05]   Connecting to router at port 5000
-[19:12:2023 11:31:05]   Timeout connecting to router at port 5000
-[19:12:2023 11:31:05]   No router available
-[19:12:2023 11:31:05]   Connecting to router at port 5000
-[19:12:2023 11:32:20]   Connecting to router at port 5000
-[19:12:2023 11:32:20]   Connecting to router at port 5000
-[19:12:2023 11:32:25]   Timeout connecting to router at port 5000
-[19:12:2023 11:32:25]   Timeout connecting to router at port 5000
-[19:12:2023 11:32:25]   No router available
-[19:12:2023 11:32:25]   No router available
-[19:12:2023 11:32:25]   Connecting to router at port 5000
-[19:12:2023 11:32:25]   Connecting to router at port 5000
-[19:12:2023 11:32:30]   Timeout connecting to router at port 5000
-[19:12:2023 11:32:30]   No router available
-[19:12:2023 11:32:30]   Connecting to router at port 5000
-[19:12:2023 11:32:30]   Timeout connecting to router at port 5000
-[19:12:2023 11:32:30]   No router available
-[19:12:2023 11:32:30]   Connecting to router at port 5000
-[19:12:2023 11:32:35]   Timeout connecting to router at port 5000
-[19:12:2023 11:32:35]   No router available
-[19:12:2023 11:32:35]   Timeout connecting to router at port 5000
-[19:12:2023 11:32:35]   No router available
-[19:12:2023 11:32:50]   Connecting to router at port 5000
-[19:12:2023 11:32:50]   Connecting to router at port 5000
-[19:12:2023 11:32:50]   Connected to router at port 5000
-[19:12:2023 11:32:50]   Connected to router at port 5000
-[19:12:2023 11:32:50]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 pulled from server
-[19:12:2023 11:32:50]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 updated in database
-[19:12:2023 11:32:50]   Connecting to router at port 5000
-[19:12:2023 11:32:50]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 pushed to server
-[19:12:2023 11:32:50]   Connecting to router at port 5000
-[19:12:2023 11:32:50]   Connected to router at port 5000
-[19:12:2023 11:32:50]   List d099dbca-8400-404d-bc6b-d36c07acaa33 pulled from server
-[19:12:2023 11:32:50]   List d099dbca-8400-404d-bc6b-d36c07acaa33 updated in database
-[19:12:2023 11:32:50]   Connected to router at port 5000
-[19:12:2023 11:32:50]   Connecting to router at port 5000
-[19:12:2023 11:32:50]   List d099dbca-8400-404d-bc6b-d36c07acaa33 pushed to server
-[19:12:2023 11:32:50]   Connecting to router at port 5000
-[19:12:2023 11:32:50]   Connected to router at port 5000
-[19:12:2023 11:32:50]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c pulled from server
-[19:12:2023 11:32:50]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c updated in database
-[19:12:2023 11:32:50]   Connected to router at port 5000
-[19:12:2023 11:32:50]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c pushed to server
-[19:12:2023 11:33:20]   Connecting to router at port 5000
-[19:12:2023 11:33:20]   Connected to router at port 5000
-[19:12:2023 11:33:20]   Connecting to router at port 5000
-[19:12:2023 11:33:20]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 pushed to server
-[19:12:2023 11:33:20]   Connecting to router at port 5000
-[19:12:2023 11:33:20]   Connected to router at port 5000
-[19:12:2023 11:33:20]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 pulled from server
-[19:12:2023 11:33:20]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 updated in database
-[19:12:2023 11:33:20]   Connecting to router at port 5000
-[19:12:2023 11:33:20]   Connected to router at port 5000
-[19:12:2023 11:33:20]   List d099dbca-8400-404d-bc6b-d36c07acaa33 pushed to server
-[19:12:2023 11:33:20]   Connecting to router at port 5000
-[19:12:2023 11:33:20]   Connected to router at port 5000
-[19:12:2023 11:33:20]   List d099dbca-8400-404d-bc6b-d36c07acaa33 pulled from server
-[19:12:2023 11:33:20]   List d099dbca-8400-404d-bc6b-d36c07acaa33 updated in database
-[19:12:2023 11:33:20]   Connected to router at port 5000
-[19:12:2023 11:33:20]   Connecting to router at port 5000
-[19:12:2023 11:33:20]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c pushed to server
-[19:12:2023 11:33:20]   Connected to router at port 5000
-[19:12:2023 11:33:20]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c pulled from server
-[19:12:2023 11:33:20]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c updated in database
-[19:12:2023 11:33:50]   Connecting to router at port 5000
-[19:12:2023 11:33:50]   Connecting to router at port 5000
-[19:12:2023 11:33:50]   Connected to router at port 5000
-[19:12:2023 11:33:50]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 pulled from server
-[19:12:2023 11:33:50]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 updated in database
-[19:12:2023 11:33:50]   Connected to router at port 5000
-[19:12:2023 11:33:50]   Connecting to router at port 5000
-[19:12:2023 11:33:50]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 pushed to server
-[19:12:2023 11:33:50]   Connecting to router at port 5000
-[19:12:2023 11:33:50]   Connected to router at port 5000
-[19:12:2023 11:33:50]   List d099dbca-8400-404d-bc6b-d36c07acaa33 pulled from server
-[19:12:2023 11:33:50]   Connected to router at port 5000
-[19:12:2023 11:33:50]   List d099dbca-8400-404d-bc6b-d36c07acaa33 updated in database
-[19:12:2023 11:33:50]   Connecting to router at port 5000
-[19:12:2023 11:33:50]   List d099dbca-8400-404d-bc6b-d36c07acaa33 pushed to server
-[19:12:2023 11:33:50]   Connecting to router at port 5000
-[19:12:2023 11:33:50]   Connected to router at port 5000
-[19:12:2023 11:33:50]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c pulled from server
-[19:12:2023 11:33:50]   Connected to router at port 5000
-[19:12:2023 11:33:50]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c updated in database
-[19:12:2023 11:33:50]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c pushed to server
-[19:12:2023 11:34:20]   Connecting to router at port 5000
-[19:12:2023 11:34:20]   Connected to router at port 5000
-[19:12:2023 11:34:20]   Connecting to router at port 5000
-[19:12:2023 11:34:20]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 pulled from server
-[19:12:2023 11:34:20]   Connected to router at port 5000
-[19:12:2023 11:34:20]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 updated in database
-[19:12:2023 11:34:20]   Connecting to router at port 5000
-[19:12:2023 11:34:20]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 pushed to server
-[19:12:2023 11:34:20]   Connecting to router at port 5000
-[19:12:2023 11:34:20]   Connected to router at port 5000
-[19:12:2023 11:34:20]   List d099dbca-8400-404d-bc6b-d36c07acaa33 pulled from server
-[19:12:2023 11:34:20]   List d099dbca-8400-404d-bc6b-d36c07acaa33 updated in database
-[19:12:2023 11:34:20]   Connected to router at port 5000
-[19:12:2023 11:34:20]   Connecting to router at port 5000
-[19:12:2023 11:34:20]   List d099dbca-8400-404d-bc6b-d36c07acaa33 pushed to server
-[19:12:2023 11:34:20]   Connecting to router at port 5000
-[19:12:2023 11:34:20]   Connected to router at port 5000
-[19:12:2023 11:34:20]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c pulled from server
-[19:12:2023 11:34:20]   Connected to router at port 5000
-[19:12:2023 11:34:20]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c updated in database
-[19:12:2023 11:34:20]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c pushed to server
-[19:12:2023 11:34:50]   Connecting to router at port 5000
-[19:12:2023 11:34:50]   Connected to router at port 5000
-[19:12:2023 11:34:50]   Connecting to router at port 5000
-[19:12:2023 11:34:50]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 pulled from server
-[19:12:2023 11:34:50]   Connected to router at port 5000
-[19:12:2023 11:34:50]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 updated in database
-[19:12:2023 11:34:50]   Connecting to router at port 5000
-[19:12:2023 11:34:50]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 pushed to server
-[19:12:2023 11:34:50]   Connecting to router at port 5000
-[19:12:2023 11:34:50]   Connected to router at port 5000
-[19:12:2023 11:34:50]   Connected to router at port 5000
-[19:12:2023 11:34:50]   List d099dbca-8400-404d-bc6b-d36c07acaa33 pulled from server
-[19:12:2023 11:34:50]   List d099dbca-8400-404d-bc6b-d36c07acaa33 updated in database
-[19:12:2023 11:34:50]   Connecting to router at port 5000
-[19:12:2023 11:34:50]   List d099dbca-8400-404d-bc6b-d36c07acaa33 pushed to server
-[19:12:2023 11:34:50]   Connecting to router at port 5000
-[19:12:2023 11:34:50]   Connected to router at port 5000
-[19:12:2023 11:34:50]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c pulled from server
-[19:12:2023 11:34:50]   Connected to router at port 5000
-[19:12:2023 11:34:50]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c updated in database
-[19:12:2023 11:34:50]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c pushed to server
-[19:12:2023 11:35:20]   Connecting to router at port 5000
-[19:12:2023 11:35:20]   Connecting to router at port 5000
-[19:12:2023 11:35:20]   Connected to router at port 5000
-[19:12:2023 11:35:20]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 pushed to server
-[19:12:2023 11:35:20]   Connecting to router at port 5000
-[19:12:2023 11:35:20]   Connected to router at port 5000
-[19:12:2023 11:35:20]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 pulled from server
-[19:12:2023 11:35:20]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 updated in database
-[19:12:2023 11:35:20]   Connected to router at port 5000
-[19:12:2023 11:35:20]   Connecting to router at port 5000
-[19:12:2023 11:35:20]   List d099dbca-8400-404d-bc6b-d36c07acaa33 pushed to server
-[19:12:2023 11:35:20]   Connecting to router at port 5000
-[19:12:2023 11:35:20]   Connected to router at port 5000
-[19:12:2023 11:35:20]   List d099dbca-8400-404d-bc6b-d36c07acaa33 pulled from server
-[19:12:2023 11:35:20]   Connected to router at port 5000
-[19:12:2023 11:35:20]   List d099dbca-8400-404d-bc6b-d36c07acaa33 updated in database
-[19:12:2023 11:35:20]   Connecting to router at port 5000
-[19:12:2023 11:35:20]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c pushed to server
-[19:12:2023 11:35:20]   Connected to router at port 5000
-[19:12:2023 11:35:20]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c pulled from server
-[19:12:2023 11:35:20]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c updated in database
-[19:12:2023 11:35:50]   Connecting to router at port 5000
-[19:12:2023 11:35:50]   Connecting to router at port 5000
-[19:12:2023 11:35:50]   Connected to router at port 5000
-[19:12:2023 11:35:50]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 pulled from server
-[19:12:2023 11:35:50]   Connected to router at port 5000
-[19:12:2023 11:35:50]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 updated in database
-[19:12:2023 11:35:50]   Connecting to router at port 5000
-[19:12:2023 11:35:50]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 pushed to server
-[19:12:2023 11:35:50]   Connecting to router at port 5000
-[19:12:2023 11:35:50]   Connected to router at port 5000
-[19:12:2023 11:35:50]   List d099dbca-8400-404d-bc6b-d36c07acaa33 pulled from server
-[19:12:2023 11:35:50]   Connected to router at port 5000
-[19:12:2023 11:35:50]   List d099dbca-8400-404d-bc6b-d36c07acaa33 updated in database
-[19:12:2023 11:35:50]   Connecting to router at port 5000
-[19:12:2023 11:35:50]   List d099dbca-8400-404d-bc6b-d36c07acaa33 pushed to server
-[19:12:2023 11:35:50]   Connecting to router at port 5000
-[19:12:2023 11:35:50]   Connected to router at port 5000
-[19:12:2023 11:35:50]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c pulled from server
-[19:12:2023 11:35:50]   Connected to router at port 5000
-[19:12:2023 11:35:50]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c updated in database
-[19:12:2023 11:35:50]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c pushed to server
-[19:12:2023 11:36:20]   Connecting to router at port 5000
-[19:12:2023 11:36:20]   Connecting to router at port 5000
-[19:12:2023 11:36:20]   Connected to router at port 5000
-[19:12:2023 11:36:20]   Connected to router at port 5000
-[19:12:2023 11:36:20]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 pushed to server
-[19:12:2023 11:36:20]   Connecting to router at port 5000
-[19:12:2023 11:36:20]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 pulled from server
-[19:12:2023 11:36:20]   Connected to router at port 5000
-[19:12:2023 11:36:20]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 updated in database
-[19:12:2023 11:36:20]   Connecting to router at port 5000
-[19:12:2023 11:36:20]   List d099dbca-8400-404d-bc6b-d36c07acaa33 pushed to server
-[19:12:2023 11:36:20]   Connecting to router at port 5000
-[19:12:2023 11:36:20]   Connected to router at port 5000
-[19:12:2023 11:36:20]   List d099dbca-8400-404d-bc6b-d36c07acaa33 pulled from server
-[19:12:2023 11:36:20]   Connected to router at port 5000
-[19:12:2023 11:36:20]   List d099dbca-8400-404d-bc6b-d36c07acaa33 updated in database
-[19:12:2023 11:36:20]   Connecting to router at port 5000
-[19:12:2023 11:36:20]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c pushed to server
-[19:12:2023 11:36:20]   Connected to router at port 5000
-[19:12:2023 11:36:20]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c pulled from server
-[19:12:2023 11:36:20]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c updated in database
-[19:12:2023 11:36:50]   Connecting to router at port 5000
-[19:12:2023 11:36:50]   Connected to router at port 5000
-[19:12:2023 11:36:50]   Connecting to router at port 5000
-[19:12:2023 11:36:50]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 pulled from server
-[19:12:2023 11:36:50]   Connected to router at port 5000
-[19:12:2023 11:36:50]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 updated in database
-[19:12:2023 11:36:50]   Connecting to router at port 5000
-[19:12:2023 11:36:50]   List 5815ab5a-6df9-4261-bc24-3f6bd88a91d3 pushed to server
-[19:12:2023 11:36:50]   Connecting to router at port 5000
-[19:12:2023 11:36:50]   Connected to router at port 5000
-[19:12:2023 11:36:50]   List d099dbca-8400-404d-bc6b-d36c07acaa33 pulled from server
-[19:12:2023 11:36:50]   List d099dbca-8400-404d-bc6b-d36c07acaa33 updated in database
-[19:12:2023 11:36:50]   Connected to router at port 5000
-[19:12:2023 11:36:50]   Connecting to router at port 5000
-[19:12:2023 11:36:50]   List d099dbca-8400-404d-bc6b-d36c07acaa33 pushed to server
-[19:12:2023 11:36:50]   Connecting to router at port 5000
-[19:12:2023 11:36:50]   Connected to router at port 5000
-[19:12:2023 11:36:50]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c pulled from server
-[19:12:2023 11:36:50]   Connected to router at port 5000
-[19:12:2023 11:36:50]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c updated in database
-[19:12:2023 11:36:50]   List ddbbe216-9368-4d74-a5d1-7b51e44a2d9c pushed to server
+[19:12:2023 16:21:08]   Connecting to router at port 5000
+[19:12:2023 16:21:08]   Connected to router at port 5000
+[19:12:2023 16:21:08]   List 03cefe58-8eed-424e-9321-da086c897496 pulled from server
+[19:12:2023 16:21:08]   List 03cefe58-8eed-424e-9321-da086c897496 added to database
+[19:12:2023 16:21:08]   List 03cefe58-8eed-424e-9321-da086c897496 updated in database
+[19:12:2023 16:21:08]   Connecting to router at port 5000
+[19:12:2023 16:21:08]   Connected to router at port 5000
+[19:12:2023 16:21:08]   Connecting to router at port 5000
+[19:12:2023 16:21:08]   List 03cefe58-8eed-424e-9321-da086c897496 pulled from server
+[19:12:2023 16:21:08]   Connected to router at port 5000
+[19:12:2023 16:21:08]   List 03cefe58-8eed-424e-9321-da086c897496 updated in database
+[19:12:2023 16:21:08]   List 03cefe58-8eed-424e-9321-da086c897496 pushed to server
+[19:12:2023 16:21:38]   Connecting to router at port 5000
+[19:12:2023 16:21:38]   Connected to router at port 5000
+[19:12:2023 16:21:38]   Connecting to router at port 5000
+[19:12:2023 16:21:38]   List 03cefe58-8eed-424e-9321-da086c897496 pulled from server
+[19:12:2023 16:21:38]   Connected to router at port 5000
+[19:12:2023 16:21:38]   List 03cefe58-8eed-424e-9321-da086c897496 updated in database
+[19:12:2023 16:21:38]   List 03cefe58-8eed-424e-9321-da086c897496 pushed to server
+[19:12:2023 16:22:08]   Connecting to router at port 5000
+[19:12:2023 16:22:08]   Connecting to router at port 5000
+[19:12:2023 16:22:08]   Connected to router at port 5000
+[19:12:2023 16:22:08]   Connected to router at port 5000
+[19:12:2023 16:22:08]   List 03cefe58-8eed-424e-9321-da086c897496 pushed to server
+[19:12:2023 16:22:08]   List 03cefe58-8eed-424e-9321-da086c897496 pulled from server
+[19:12:2023 16:22:08]   List 03cefe58-8eed-424e-9321-da086c897496 updated in database
+[19:12:2023 16:22:38]   Connecting to router at port 5000
+[19:12:2023 16:22:38]   Connected to router at port 5000
+[19:12:2023 16:22:38]   Connecting to router at port 5000
+[19:12:2023 16:22:38]   List 03cefe58-8eed-424e-9321-da086c897496 pushed to server
+[19:12:2023 16:22:38]   Connected to router at port 5000
+[19:12:2023 16:22:38]   List 03cefe58-8eed-424e-9321-da086c897496 pulled from server
+[19:12:2023 16:22:38]   List 03cefe58-8eed-424e-9321-da086c897496 updated in database
+[19:12:2023 16:23:08]   Connecting to router at port 5000
+[19:12:2023 16:23:08]   Connected to router at port 5000
+[19:12:2023 16:23:08]   Connecting to router at port 5000
+[19:12:2023 16:23:08]   List 03cefe58-8eed-424e-9321-da086c897496 pushed to server
+[19:12:2023 16:23:08]   Connecting to router at port 5000
+[19:12:2023 16:23:08]   Connected to router at port 5000
+[19:12:2023 16:23:08]   List 03cefe58-8eed-424e-9321-da086c897496 pulled from server
+[19:12:2023 16:23:08]   Connected to router at port 5000
+[19:12:2023 16:23:08]   List 03cefe58-8eed-424e-9321-da086c897496 updated in database
+[19:12:2023 16:23:08]   Connecting to router at port 5000
+[19:12:2023 16:23:08]   List f5946920-d9d6-4bca-abc7-d90474a28210 pushed to server
+[19:12:2023 16:23:08]   Connected to router at port 5000
+[19:12:2023 16:23:08]   List f5946920-d9d6-4bca-abc7-d90474a28210 pulled from server
+[19:12:2023 16:23:08]   List f5946920-d9d6-4bca-abc7-d90474a28210 updated in database
+[19:12:2023 16:23:38]   Connecting to router at port 5000
+[19:12:2023 16:23:38]   Connecting to router at port 5000
+[19:12:2023 16:23:38]   Connected to router at port 5000
+[19:12:2023 16:23:38]   List 03cefe58-8eed-424e-9321-da086c897496 pulled from server
+[19:12:2023 16:23:38]   Connected to router at port 5000
+[19:12:2023 16:23:38]   List 03cefe58-8eed-424e-9321-da086c897496 updated in database
+[19:12:2023 16:23:38]   Connecting to router at port 5000
+[19:12:2023 16:23:38]   List 03cefe58-8eed-424e-9321-da086c897496 pushed to server
+[19:12:2023 16:23:38]   Connecting to router at port 5000
+[19:12:2023 16:23:38]   Connected to router at port 5000
+[19:12:2023 16:23:38]   List f5946920-d9d6-4bca-abc7-d90474a28210 pulled from server
+[19:12:2023 16:23:38]   Connected to router at port 5000
+[19:12:2023 16:23:38]   List f5946920-d9d6-4bca-abc7-d90474a28210 updated in database
+[19:12:2023 16:23:38]   Connecting to router at port 5000
+[19:12:2023 16:23:38]   List f5946920-d9d6-4bca-abc7-d90474a28210 pushed to server
+[19:12:2023 16:23:38]   Connecting to router at port 5000
+[19:12:2023 16:23:38]   Connected to router at port 5000
+[19:12:2023 16:23:38]   Error pulling list 815a6683-2880-4f78-a58b-dcfedbda4e37 from server
+[19:12:2023 16:23:38]   Connected to router at port 5000
+[19:12:2023 16:23:38]   List 815a6683-2880-4f78-a58b-dcfedbda4e37 pushed to server

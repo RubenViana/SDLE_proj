@@ -51,11 +51,7 @@ public class InitState implements ClientState {
             this.databaseURL = "jdbc:sqlite:./src/users/" + this.userID + "_database.db";
             // Attempt to connect to the database
             connection = DriverManager.getConnection(this.databaseURL);
-
-            if (!file.exists()) {
-                // Create a table (if it doesn't exist)
-                createTable(connection);
-            }
+            createTable(connection);
             return true;
 
         } catch (SQLException e) {
